@@ -1,0 +1,33 @@
+      <view class='title'>填写备注</view>
+
+<view class='remark'>
+   <view class='content'>
+      <textarea 
+         class='text-content'
+         placeholder='请填写额外对餐厅和配送小哥备注的信息'
+         bindblur="bindTextAreaBlur"
+         value='{{content}}'
+      >
+
+      </textarea>
+      <view class='limite'>限制50字</view>
+      
+      <!-- <view 
+         class='tag'
+         style='{{tag1}}'
+         bindtap='onTag1'
+      >不要醋不要辣</view>
+      
+      <view 
+         class='tag'
+         style='{{tag2}}'
+         bindtap='onTag2'
+      >千万别放香菜，然后少葱</view> -->
+   
+   </view>
+
+   <button 
+      bindtap='backtopay'
+      class='ensure-btn'
+   >确定</button>
+</view>

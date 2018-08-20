@@ -1,0 +1,203 @@
+.main-money-statistics {
+  float: left;
+  background-color: #f0f0f0;
+  width: 1060px;
+  height: 660px;
+  padding: 20px;
+  display: none;
+  overflow-y: scroll;
+}
+.main-money-statistics .day-chooser {
+  width: 140px;
+  height: 30px;
+  border-radius: 40px;
+  margin: 0 0 20px 10px;
+  cursor: pointer;
+}
+.main-money-statistics .day-chooser:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.main-money-statistics .day-chooser div {
+  text-align: center;
+  height: 26px;
+  line-height: 26px;
+  width: 66px;
+  border: 2px solid #F8424F;
+  font-size: 14px;
+  background-color: #F8424F;
+  color: #FFF;
+}
+.main-money-statistics .day-chooser div:first-of-type {
+  float: left;
+  border-radius: 6px 0 0 6px;
+}
+.main-money-statistics .day-chooser div:last-of-type {
+  float: right;
+  border-radius: 0 6px 6px 0;
+}
+.main-money-statistics .day-chooser div.active {
+  background-color: #FFF;
+  color: #F8424F;
+}
+.main-money-statistics .single-day-part .detail,
+.main-money-statistics .many-day-part .detail {
+  margin: 10px 0;
+}
+.main-money-statistics .single-day-part .detail:after,
+.main-money-statistics .many-day-part .detail:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.main-money-statistics .single-day-part .detail .query,
+.main-money-statistics .many-day-part .detail .query {
+  float: left;
+}
+.main-money-statistics .single-day-part .detail .query .detail-li,
+.main-money-statistics .many-day-part .detail .query .detail-li {
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  margin: 0 5px;
+}
+.main-money-statistics .single-day-part .detail .query .detail-li input[type='text'],
+.main-money-statistics .many-day-part .detail .query .detail-li input[type='text'] {
+  height: 25px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #BBB;
+  padding-left: 5px;
+}
+.main-money-statistics .single-day-part .detail .query .detail-li input[type='date'],
+.main-money-statistics .many-day-part .detail .query .detail-li input[type='date'] {
+  width: 120px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+.main-money-statistics .single-day-part .detail .query .detail-li input[type='checkbox'],
+.main-money-statistics .many-day-part .detail .query .detail-li input[type='checkbox'] {
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: black;
+}
+.main-money-statistics .single-day-part .detail .query button,
+.main-money-statistics .many-day-part .detail .query button {
+  float: right;
+  color: #FFF;
+  background-color: #f7424f;
+  width: 80px;
+  height: 30px;
+  margin-right: 10px;
+  line-height: 25px;
+  font-size: 12px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+.main-money-statistics .single-day-part .detail .money-page-chooser,
+.main-money-statistics .many-day-part .detail .money-page-chooser {
+  float: right;
+}
+.main-money-statistics .single-day-part .detail .money-page-chooser div,
+.main-money-statistics .many-day-part .detail .money-page-chooser div {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #BBB;
+  padding: 1px 2px;
+  border-radius: 3px;
+  background-color: #FFF;
+  color: #F56985;
+  font-size: 14px;
+}
+.main-money-statistics .single-day-part .detail .money-page-chooser .numbers span,
+.main-money-statistics .many-day-part .detail .money-page-chooser .numbers span {
+  margin: 0 5px;
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+}
+.main-money-statistics .single-day-part .money-data,
+.main-money-statistics .many-day-part .money-data {
+  margin: 15px;
+  width: 99%;
+  border: 2px solid #CCC;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.main-money-statistics .single-day-part .money-data thead tr,
+.main-money-statistics .many-day-part .money-data thead tr {
+  background-color: #dcdcdc;
+  color: #222;
+}
+.main-money-statistics .single-day-part .money-data thead tr th,
+.main-money-statistics .many-day-part .money-data thead tr th {
+  height: 44px;
+  font-weight: 300;
+  width: 120px;
+  border: none;
+}
+.main-money-statistics .single-day-part .money-data tbody tr,
+.main-money-statistics .many-day-part .money-data tbody tr {
+  background-color: #FFF;
+  color: #222;
+  height: 40px;
+}
+.main-money-statistics .single-day-part .money-data tbody tr th,
+.main-money-statistics .many-day-part .money-data tbody tr th {
+  margin: auto;
+  border-left: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  font-weight: 300;
+  width: 300px;
+}
+.main-money-statistics .single-day-part .money-data tbody tr th img.type-img,
+.main-money-statistics .many-day-part .money-data tbody tr th img.type-img {
+  width: 80px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main-money-statistics .single-day-part .money-data tbody tr th img.icon,
+.main-money-statistics .many-day-part .money-data tbody tr th img.icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main-money-statistics .single-day-part .money-data tbody tr th:first-of-type,
+.main-money-statistics .many-day-part .money-data tbody tr th:first-of-type {
+  border-left: none;
+}
+.main-money-statistics .single-day-part .bottom .appear-chooser,
+.main-money-statistics .many-day-part .bottom .appear-chooser {
+  float: left;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.main-money-statistics .single-day-part .bottom .appear-chooser .appear-li,
+.main-money-statistics .many-day-part .bottom .appear-chooser .appear-li {
+  width: 110px;
+  display: inline-block;
+}
+.main-money-statistics .single-day-part .bottom .appear-chooser .appear-li input,
+.main-money-statistics .many-day-part .bottom .appear-chooser .appear-li input {
+  display: inline-block;
+}
+.main-money-statistics .single-day-part .bottom .total-money,
+.main-money-statistics .many-day-part .bottom .total-money {
+  float: right;
+}
+.main-money-statistics .single-day-part .bottom .total-money div:first-of-type span,
+.main-money-statistics .many-day-part .bottom .total-money div:first-of-type span {
+  font-size: 32px;
+}
+.main-money-statistics .single-day-part .bottom .total-money div:first-of-type span:first-of-type,
+.main-money-statistics .many-day-part .bottom .total-money div:first-of-type span:first-of-type {
+  color: #F8424F;
+}

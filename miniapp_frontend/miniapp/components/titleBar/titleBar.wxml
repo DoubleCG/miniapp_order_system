@@ -1,0 +1,10 @@
+<view class="titleBar bg-f border-bottom mt3" bindtap="onTap">
+    <view class="titleWarp">
+      <view class="w-b"></view>
+      <span>{{title}}</span>
+    </view>
+    <view>
+      <image wx:if="{{links}}" class="icon" src="../../resources/right.png" ></image>
+      <!-- <i class="user-myGold">20克</i> -->
+    </view>
+</view>

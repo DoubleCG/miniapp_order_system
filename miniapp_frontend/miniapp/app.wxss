@@ -1,0 +1,155 @@
+
+@import 'weui.wxss';
+
+page{
+    background-color: #F8F8F8;
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.page__hd {
+    padding: 40px;
+}
+.page__bd {
+    padding-bottom: 40px;
+}
+.page__bd_spacing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page__ft{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.page__title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.page__desc {
+    margin-top: 5px;
+    color: #888888;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+/*
+* *一像素边框*
+* 使用时直接调用border-bottom,border-right,border-left,border-top
+*/
+.border-bottom,.border-right,.border-left,.border-top{
+  position: relative;
+}
+.border-top::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+.border-bottom::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+.border-left::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #eeeeee;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+.border-right::after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #eeeeee;
+  -webkit-transform-origin: right top;
+  transform-origin: right top;
+}
+.border{
+  border: 1px solid #eeeeee;
+}
+.border-rb{
+  border: 1px solid #eeeeee;
+}
+/* 2倍屏 */
+@media only screen and (-webkit-min-device-pixel-ratio: 2.0) {
+  .border-bottom::after,.border-top::after {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+  .border-left::after,.border-right::after {
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+  }
+  .border{
+    border: 0.5px solid #e5e5e5;
+  }
+}
+/* 3倍屏 */
+@media only screen and (-webkit-min-device-pixel-ratio: 3.0) {
+  .border-bottom::after,.border-top::after {
+    -webkit-transform: scaleY(0.33);
+    transform: scaleY(0.33);
+  }
+  .border-left::after,.border-right::after {
+    -webkit-transform: scaleX(0.33);
+    transform: scaleX(0.33);
+  }
+}
+
+/*
+* 布局——对齐方式
+*/
+.txc{
+  text-align: center;
+}
+.txl{
+  text-align: left;
+}
+.txr{
+  text-align: right;
+}
+.vm{
+  vertical-align: middle;
+}
+
+/*
+* flex布局
+*/
+.flex{
+  display: flex;
+}
+.flex1{
+  flex: 1;
+}
+.flex2{
+  flex: 2;
+}
+.flex3{
+  flex:3;
+}
+.al-c{
+  align-items: center;
+}

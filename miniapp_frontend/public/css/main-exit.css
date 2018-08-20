@@ -1,0 +1,61 @@
+.main-exit {
+  float: left;
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.main-exit .window {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #AAA;
+}
+.main-exit .window .title {
+  color: #FFF;
+  font-size: 18px;
+  padding-left: 20px;
+  line-height: 45px;
+  height: 45px;
+  background: linear-gradient(90deg, #F95B4B, #E7265D);
+}
+.main-exit .window .title img {
+  margin: 13px;
+  width: 20px;
+  height: 20px;
+  float: right;
+  cursor: pointer;
+}
+.main-exit .window .content {
+  background-color: #fff;
+  height: 180px;
+}
+.main-exit .window .content p {
+  text-align: center;
+  padding-top: 50px;
+}
+.main-exit .window .content .btns {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 15px;
+  margin-left: 10%;
+  width: 80%;
+}
+.main-exit .window .content .btns button {
+  width: 44%;
+  margin: 0 27%;
+  height: 28px;
+  line-height: 26px;
+  border: 2px solid #FA4A59;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-exit .window .content .btns button:first-of-type {
+  background-color: #FA4A59;
+  color: #FFF;
+}

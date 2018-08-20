@@ -1,0 +1,73 @@
+<view class='my'>
+
+   <view class='title'>我的主页</view>
+
+
+   <view class='person'>
+   
+      
+
+        <image class='headImg' src='{{avatarUrl}}'>
+        </image> 
+
+      <view class='detail'>
+         <view class='nickname'>
+
+             {{nickName}} 
+         
+         </view>
+         <view class='phonenumber'>
+            <image class='phone-icon' src='{{phone}}'></image>
+            {{phonenumber}}
+            </view>
+      </view>
+      <!-- <image class='skiptip' src='{{arrowR}}'></image> -->
+   </view>
+
+   <view class='assets'>
+      <view class='assets-li money-packet'>
+         <view class='money-packet-detail'>
+            <span>0</span>元
+         </view>
+         <view class='assets-text'>红包</view>
+      </view>
+      <view class='assets-li scores'>
+         <view class='scores-detail'>
+            {{score}}
+         </view>
+         <view class='assets-text'>积分</view>
+      </view>
+      <view 
+         bindtap='viewCoupons'
+         class='assets-li coupons'
+      >
+         <view class='coupons-detail'> {{coupons.length}}  </view>
+         <view class='assets-text'>优惠券</view>
+      </view>
+   </view>
+
+
+   <view class='total-consume' bindtap='toOrderForm'>
+      <view class='total-consume-title'>
+         总消费：
+      </view>
+      <view class='total-consume-data'>
+         <view class='total-consume-ordermunber'>
+             <span>{{consumeTime}}</span>单
+         </view>
+         <view class='total-consume-money'>
+            <span>{{consume}}</span>元
+         </view>
+      </view>
+   </view>
+
+
+   <!-- <button style='margin-top:100px;'>敬请期待！</button> -->
+
+   <view 
+      bindtap='toSayProblem'
+      class='sayProblem'
+   >我要反馈问题</view>
+
+
+</view>

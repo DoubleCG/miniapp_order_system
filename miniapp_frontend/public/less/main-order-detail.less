@@ -1,0 +1,234 @@
+.main-order-detail {
+	float: left;
+	background-color: #f0f0f0;
+	width:80%;
+	@media(max-width:1450px){
+		width:75%;
+	}
+	@media(max-width:850px){
+		width:96%;
+	}
+	max-width:1800px;
+	height: 660px;
+	padding: 20px;
+	display: none;
+	overflow-y: scroll;
+	box-shadow: 0 0 10px #999;
+
+	.detail {
+		margin: 10px 0;
+		&:after {
+			content: "";
+			clear: both;
+			display: block;
+		}
+		.query {
+			position: relative;
+			.detail-li {
+				display: inline-block;
+				font-size: 14px;
+				margin: 0 10px;
+
+				input[type='text'] {
+					height: 25px;
+					width: 100px;
+					border-radius: 5px;
+					border: 1px solid #BBB;
+					padding-left: 5px;
+					display: inline-block;
+				}
+				img.icon {
+					width: 18px;
+					height: 18px;
+					transform: translateX(-24px) translateY(4px);
+					cursor: pointer;
+					visibility: hidden;
+				}
+				input[type='date'] {
+					width: 120px;
+					height: 20px;
+					display: inline-block;
+					border-radius: 5px;
+					border: 1px solid #999;
+				}
+				input[type='checkbox'] {
+					border-radius: 50%;
+					cursor: pointer;
+					transform: translateY(1px);
+					background-color: black;
+				}
+			}
+			& > a {
+				color: purple;
+				text-decoration: underline;
+				cursor: pointer;
+				font-size: 14px;
+				float: right;
+				margin-top: 5px;
+			}
+			& > span {
+				float: right;
+				margin-right: 150px;
+			}
+			.rankway-select {
+				position: absolute;
+				top: 0;
+				right: 80px;
+				border: 1px solid #999;
+				cursor: pointer;
+				height: 1.5rem;
+				line-height: 1.5rem;
+				width: 120px;
+				overflow: hidden;
+				transition: all 0.3s;
+				padding: 0;
+				background-color: #FFF;
+				font-size: 14px;
+				borders-radius:3px;
+
+				span {
+					padding-left: 5px;
+				}
+				img {
+					float: right;
+					width: 16px;
+					height: 16px;
+					transform: translateY(2px);
+				}
+				.options {
+					margin-top: 4px;
+					border-top: 2px solid #999;
+					& > div {
+						height: 30px;
+						line-height: 30px;
+						padding-left: 5px;
+						&:hover {
+							background-color: #f7424f;
+						}
+					}
+				}
+			}
+			button {
+				color: #FFF;
+				background-color: #f7424f;
+				width: 90px;
+				height: 28px;
+				line-height: 25px;
+				font-size: 12px;
+				border: 1px solid #CCC;
+				border-radius: 5px;
+				cursor: pointer;
+				transform: translateY(-1px);
+			}
+		}
+	}
+
+	.table-wrap {
+		background-color: #DDD;
+		border-radius: 5px;
+		padding: 15px 15px 50px 15px;
+	}
+	.orders-data {
+		margin: 0 auto;
+		width: 99%;
+		border: 2px solid #CCC;
+		border-radius: 10px;
+		overflow: hidden;
+		thead {
+			tr {
+				background-color: #dcdcdc;
+				color: #222;
+				th {
+					height: 40px;
+					font-weight: 300;
+					font-size:0.9rem;
+					width: 120px;
+					border: none;
+				}
+			}
+		}
+		tbody {
+
+			tr {
+				background-color: #FFF;
+				color: #222;
+				height: 90px;
+				th {
+					border-left: 1px solid #BBB;
+					font-size:0.9rem;
+					border-bottom: 1px solid #BBB;
+					height: 40px;
+					font-weight: 300;
+					width: 120px;
+					img.type-img {
+						width: 80px;
+						height: 60px;
+						margin: 5px;
+						cursor: pointer;
+					}
+					img.icon {
+						width: 30px;
+						height: 30px;
+						margin: 5px;
+						cursor: pointer;
+					}
+					&:first-of-type {
+						border-left: none;
+					}
+
+					button {
+						width: 80px;
+						height: 24px;
+						border-radius: 5px;
+						font-size: 14px;
+						line-height: 14px;
+						border: 2px solid transparent;
+					}
+					button.got {
+						border-color: #AAA;
+						color: #AAA;
+						background-color: #FFF;
+					}
+					button.sending {
+						border-color: #f7424f;
+						background-color: #FFF;
+						color: #f7424f;
+						cursor: pointer;
+					}
+					button.not-send {
+						border-color: #f7424f;
+						background-color: #f7424f;
+						color: #FFF;
+						cursor: pointer;
+					}
+
+				}
+			}
+		}
+	}
+	.page-chooser{
+		float: right;
+		margin:10px;
+		div{
+			display:inline-block;
+			cursor:pointer;
+			border:1px solid #BBB;
+			padding:1px 2px;
+			border-radius:3px;
+			background-color:#FFF;
+			color:#F56985;
+			font-size:14px;
+		}
+		.numbers{
+			span{
+				display:inline-block;
+				width:22px;
+				margin:0 5px;
+				font-size:14px;
+				color:#888;
+				cursor:pointer;
+			}
+		}
+	}
+
+}

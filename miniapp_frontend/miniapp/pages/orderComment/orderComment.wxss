@@ -1,0 +1,80 @@
+.orderComment{
+   min-height:1000rpx;
+   height:100%;
+}
+
+
+.title{
+   height:40px;
+   line-height: 40px;
+   text-align:center;
+   background-color:#f43364;
+   background:linear-gradient(90deg,#F94E5B,#F32E74 90%);
+   color:#fff;
+   font-size:32rpx;
+   border-bottom:3px solid #FFF;
+}
+
+
+.stars-comment, .words-comment{
+   margin:15px;
+   padding:5px;
+   box-shadow: 0 0 10rpx #999;
+   background-color:#FFF;
+   border-radius: 5px;
+}
+.stars-title{
+   text-align:center;
+   font-size:14px;
+   padding:5px;
+}
+.stars{
+   text-align: center;
+   border-top:2rpx solid #DDD;
+   margin:10rpx 5rpx;
+   padding:40rpx 0 20rpx 0;
+}
+.stars-li{
+   display: inline-block;
+   height:50rpx;
+   width:50rpx;
+   margin:0 3px;
+ }
+
+.tags{
+   margin:10rpx 30rpx;
+   padding:10rpx;
+   box-shadow: 0 0 5rpx #999;
+}
+.tags-li{
+   display:inline-block;
+   margin:10rpx;
+   color:#777;
+   box-shadow: 0 0 5rpx #999;
+   padding:10rpx;
+}
+
+
+.words-title{
+   text-align:center;
+   font-size:14px;
+   padding:5px 0;
+   border-bottom:1px solid #BBB;
+}
+.words-area{
+   margin:10rpx auto;
+   padding:15rpx;
+   font-size:14px;
+}
+
+.finish-btn{
+   margin:15px;
+   position:absolute;
+   bottom:5%;
+   background-color:#f94e5b;
+   color:#FFF;
+   line-height: 80rpx;
+   height:80rpx;
+   font-size:14px;
+   width:90%;
+}

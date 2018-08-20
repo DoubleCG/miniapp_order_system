@@ -1,0 +1,205 @@
+.main-order-detail {
+  float: left;
+  background-color: #f0f0f0;
+  width: 1060px;
+  height: 660px;
+  padding: 20px;
+  display: none;
+  overflow-y: scroll;
+}
+.main-order-detail .detail {
+  margin: 10px 0;
+}
+.main-order-detail .detail:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.main-order-detail .detail .query {
+  position: relative;
+}
+.main-order-detail .detail .query .detail-li {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.main-order-detail .detail .query .detail-li input[type='text'] {
+  height: 25px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #BBB;
+  padding-left: 5px;
+  display: inline-block;
+}
+.main-order-detail .detail .query .detail-li img.icon {
+  width: 18px;
+  height: 18px;
+  transform: translateX(-24px) translateY(4px);
+  cursor: pointer;
+  visibility: hidden;
+}
+.main-order-detail .detail .query .detail-li input[type='date'] {
+  width: 120px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+.main-order-detail .detail .query .detail-li input[type='checkbox'] {
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: black;
+}
+.main-order-detail .detail .query > a {
+  color: purple;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  float: right;
+  margin-top: 5px;
+}
+.main-order-detail .detail .query > span {
+  float: right;
+  margin-right: 150px;
+}
+.main-order-detail .detail .query .rankway-select {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  border: 1px solid #999;
+  padding: 2px;
+  cursor: pointer;
+  height: 24px;
+  width: 120px;
+  overflow: hidden;
+  transition: all 0.3s;
+  padding: 0;
+  background-color: #FFF;
+  font-size: 14px;
+}
+.main-order-detail .detail .query .rankway-select span {
+  padding-left: 5px;
+}
+.main-order-detail .detail .query .rankway-select img {
+  float: right;
+  width: 16px;
+  height: 16px;
+  transform: translateY(2px);
+}
+.main-order-detail .detail .query .rankway-select .options {
+  margin-top: 4px;
+  border-top: 2px solid #999;
+}
+.main-order-detail .detail .query .rankway-select .options > div {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+.main-order-detail .detail .query .rankway-select .options > div:hover {
+  background-color: #f7424f;
+}
+.main-order-detail .detail .query button {
+  color: #FFF;
+  background-color: #f7424f;
+  width: 90px;
+  height: 30px;
+  line-height: 25px;
+  font-size: 12px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+.main-order-detail .orders-data {
+  margin: 15px;
+  width: 99%;
+  border: 2px solid #CCC;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.main-order-detail .orders-data thead tr {
+  background-color: #dcdcdc;
+  color: #222;
+}
+.main-order-detail .orders-data thead tr th {
+  height: 40px;
+  font-weight: 300;
+  width: 120px;
+  border: none;
+}
+.main-order-detail .orders-data tbody tr {
+  background-color: #FFF;
+  color: #222;
+  height: 90px;
+}
+.main-order-detail .orders-data tbody tr th {
+  border-left: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  height: 40px;
+  font-weight: 300;
+  width: 120px;
+}
+.main-order-detail .orders-data tbody tr th img.type-img {
+  width: 80px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main-order-detail .orders-data tbody tr th img.icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main-order-detail .orders-data tbody tr th:first-of-type {
+  border-left: none;
+}
+.main-order-detail .orders-data tbody tr th button {
+  width: 80px;
+  height: 24px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  border: 2px solid transparent;
+}
+.main-order-detail .orders-data tbody tr th button.got {
+  border-color: #AAA;
+  color: #AAA;
+  background-color: #FFF;
+}
+.main-order-detail .orders-data tbody tr th button.sending {
+  border-color: #f7424f;
+  background-color: #FFF;
+  color: #f7424f;
+  cursor: pointer;
+}
+.main-order-detail .orders-data tbody tr th button.not-send {
+  border-color: #f7424f;
+  background-color: #f7424f;
+  color: #FFF;
+  cursor: pointer;
+}
+.main-order-detail .order-page-chooser {
+  float: right;
+  margin-bottom: 20px;
+}
+.main-order-detail .order-page-chooser div {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #BBB;
+  padding: 1px 2px;
+  border-radius: 3px;
+  background-color: #FFF;
+  color: #F56985;
+  font-size: 14px;
+}
+.main-order-detail .order-page-chooser .numbers span {
+  display: inline-block;
+  width: 22px;
+  margin: 0 5px;
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+}

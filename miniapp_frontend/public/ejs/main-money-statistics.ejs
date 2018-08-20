@@ -1,0 +1,204 @@
+<div class="main-money-statistics">
+	<div class="day-chooser">
+		<div class='active'>单日</div>
+		<div>多日</div>
+	</div>
+
+	<div class="single-day-part">
+		<div class="detail">
+			<div class='query'>
+				<div style="transform: translateY(2px)" class="detail-li">
+					时间： <input value="" type='date'>
+				</div>
+				<div class="detail-li">
+					关键词：<input style='height:22px;' placeholder="菜名或类别" class="keyword" type="text">
+					<img class='icon' src="https://mini.wggai.com/storage/img/main-order-detail/close.png">
+				</div>
+				<button>查询</button>
+				<a>刷新统计</a>
+
+				<div class='rankway-select' style="margin-right:4rem; transform:translateY(-1.8rem);">
+					<span>时间从新到旧</span>
+					<img src="https://mini.wggai.com/storage/img/main-dish-management/down.png">
+					<div class='options'>
+						<div data-v="1">销量从高到低</div>
+						<div data-v="2">销量从低到高</div>
+						<div data-v="3">评分从高到低</div>
+						<div data-v="4">评分从低到高</div>
+						<div data-v="5">销售额从高到低</div>
+						<div data-v="6">销售额从低到高</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="money-data-table-wrap">
+			<table cellspacing="0">
+				<thead>
+				<tr>
+					<th>菜品名称</th>
+					<th>菜品类别</th>
+					<th>用户评分</th>
+					<th>总销量（份）</th>
+					<th>自提销量（份）</th>
+					<th>配送销量（份）</th>
+					<th>单价（元）</th>
+					<th>销售额（元）不含配送费</th>
+				</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+
+			<div class='page-chooser'>
+				<div class='first'><<</div>
+				<span class='numbers'></span>
+				<div class='last'>>></div>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div class='total-money'>
+				<div>
+					累计总业绩
+					<span> ∞ </span>
+					<span>元</span>
+				</div>
+				<div>
+					<span></span>
+					(配送)+
+					<span></span>
+					(自提)
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--多日数据-->
+	<div class="many-day-part">
+
+		<div class="detail">
+			<div class='query'>
+				<div class="detail-li">
+					时间：
+					<input value="" type='date'>
+					—
+					<input value="" type='date'>
+				</div>
+
+				<div class="detail-li" style="transform:translateY(-3px)">
+					关键词：<input class='keyword' type="text">
+					<img class='icon' src="https://mini.wggai.com/storage/img/main-order-detail/close.png">
+				</div>
+
+				<button  style="transform:translateY(-3px)">查询</button>
+				<a>刷新统计</a>
+
+				<div class='rankway-select' style="margin-right:4rem; transform:translateY(-1.8rem);">
+					<span>总销量从高到低</span>
+					<img src="https://mini.wggai.com/storage/img/main-dish-management/down.png">
+					<div class='options'>
+						<div data-v="1">总销量从高到低</div>
+						<div data-v="2">总销量从低到高</div>
+						<div data-v="3">销售额从高到低</div>
+						<div data-v="4">销售额从低到高</div>
+						<div data-v="5">评分从高到低</div>
+						<div data-v="6">评分从低到高</div>
+					</div>
+
+				</div>
+
+				<div class='rankway-select' style="margin-right:4rem; transform:translateY(-1.8rem);">
+					<span>总业绩从高到低</span>
+					<img src="https://mini.wggai.com/storage/img/main-dish-management/down.png">
+					<div class="options">
+						<div data-v="1">总业绩从高到低</div>
+						<div data-v="2">总业绩从低到高</div>
+						<div data-v="3">自提业绩从高到低</div>
+						<div data-v="4">自提业绩从低到高</div>
+						<div data-v="5">配送业绩从高到低</div>
+						<div data-v="6">配送业绩从低到高</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+
+
+		<div class="money-data-table-wrap">
+
+			<!--菜单数据-->
+			<table cellspacing="0">
+				<thead>
+				  <tr>
+					<th>菜品名称</th>
+					<th>菜品类别</th>
+					<th>用户评分</th>
+					<th>总销量（份）</th>
+					<th>自提销量（份）</th>
+					<th>配送销量（份）</th>
+					<th>单价（元）</th>
+					<th>销售额（元）不含配送费</th>
+				  </tr>
+				</thead>
+				<tbody> </tbody>
+		    </table>
+
+			<!--营业数据-->
+			<table cellspacing="0">
+				<thead>
+					<tr>
+						<th>年/月/日</th>
+						<th>自提业绩（元）</th>
+						<th>配送业绩（元：不含配送费）</th>
+						<th>当天总业绩（元）</th>
+						<th>当天销售最佳（菜品）</th>
+					</tr>
+				</thead>
+				<tbody> </tbody>
+			</table>
+
+			<div class='page-chooser'>
+				<div class='first'><<</div>
+				<span class='numbers'></span>
+				<div class='last'>>></div>
+			</div>
+			<div class='page-chooser'>
+				<div class='first'><<</div>
+				<span class='numbers'></span>
+				<div class='last'>>></div>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div class="appear-chooser">
+				<div class="appear-li">
+					<input type="radio" />
+					菜单报表
+				</div>
+				<div class="appear-li">
+					<input type="radio" />
+					业绩报表
+				</div>
+			</div>
+			
+			<div class='total-money'>
+				<div>
+					累计总业绩
+					<span> ∞ </span>
+					<span>元</span>
+				</div>
+				<div>
+					<span></span>
+					(配送)+
+					<span></span>
+					(自提)
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

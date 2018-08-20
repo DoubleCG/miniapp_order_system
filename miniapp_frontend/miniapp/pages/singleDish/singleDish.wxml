@@ -1,0 +1,51 @@
+<view class='singleDish'>
+
+   <view class='dish-name'>
+      鲜虾炒饭
+   </view>
+
+   <view class='pic-part'>
+      <image class='img' src='../../public/pic/dish-1.jpg'></image>
+      <view class='intro'>
+         经典鲜虾炒饭 + BBQ风味串烧 + 冰可乐
+      </view>
+   </view>
+
+   <view class='detail-part'>
+
+      <view wx:if='{{tags.length}}' class='food-detail'>
+         <view wx:for='{{tags}}' wx:key='id' class='detail-tag'>{{item}}</view>
+      </view>
+      <view wx:else class='no-tags'> 欢迎第一位食客坐好沙发评价！ </view>
+
+      <view class='end'>
+         <view class='end-price'>￥18</view>
+         <view class='end-count-part'>
+            <view bindtap='minus' class='end-minusImg'>－</view>
+            <view class='end-count'>0</view>
+            <view class='end-plusImg'>＋</view>
+         </view>
+      </view>
+
+   </view>
+</view>
+
+
+
+<view class="cart-wrp">
+
+   <view class="cart-total">
+      <view class="cart-icon-wrp" bindtap='showChoose'>
+         <image style="{{bigCart}}" class="cart-icon" src="./../../public/pic/orderBox.png" />
+         <text class="cart-total-num bc_red">{{total.count}}</text>
+      </view>
+      <text class="cart-total-price">￥{{total.money}}</text>
+   </view>
+
+   <view class="cart-back-btn" bindtap='back'>返回</view>
+   <view class="cart-pay-btn" bindtap='toPay'>选好了</view>
+
+</view>
+
+
+<button>评论部分尚未开放</button>

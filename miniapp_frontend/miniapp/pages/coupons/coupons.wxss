@@ -1,0 +1,130 @@
+.title{
+   height:40px;
+   line-height: 40px;
+   text-align:center;
+   background-color:#f43364;
+   background:linear-gradient(90deg,#F94E5B,#F32E74 90%);
+   color:#fff;
+   font-size:32rpx;
+}
+
+.nav{
+   background-color:#FFF;
+}
+.nav:after{
+   content:"";
+   height:0;
+   clear:both;
+   visibility: hidden;
+   display: block;
+}
+
+.nav-li{
+   float:left;
+   color:#AAA;
+   width:33%;
+   text-align: center;
+   height:40px;
+   line-height:40px;
+}
+
+
+
+
+
+
+
+.coupon-content{
+   padding:20px;
+}
+
+.coupon-li{
+   box-shadow: 0 0 10rpx #999;
+
+}
+.coupon-li:after{
+   display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+
+.cli-content{
+   background-color:#fcb7d4;
+   padding:10px;
+   height:60px;
+}
+.cli-content:after{
+  display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+
+.coupon-img, .coupon-detail, .coupon-price{
+   float:left;
+   height:100%;
+}
+
+.cimg{
+   width:100%;
+   height:100px;
+}
+
+.coupon-img{
+   width:60px;
+   border-radius: 50%;
+   background-color:#ffef06;
+   font-size:36px;
+   font-weight: 600;
+   color:#fcb7d4;
+   text-align: center;
+   line-height: 60px;
+}
+.coupon-detail{
+   width:150px;
+   margin:0 10px;
+}
+
+.cd-name{
+   font-size:18px;
+   font-weight: 600;
+   
+}
+.cd-time{
+   font-size:14px;
+   
+}
+
+.coupon-price{
+   float:right;
+   width:70px;
+   color:red;
+   font-size:18px;
+   line-height: 70px;
+}
+
+
+.to-use{
+   height:30px;
+   font-size:14px;
+   color:#AAA;
+   text-align: center;
+   line-height:30px;
+}
+
+
+
+
+
+
+.coupon-pic{
+   float:left;
+   width:100rpx;
+   height:100rpx;
+}
+
+.coupon-name{
+   margin-top:10rpx;
+   font-weight: 600;
+   text-align:center;
+}
+
+.coupon-validtime{
+   text-align:center;
+   font-size:24rpx;
+}

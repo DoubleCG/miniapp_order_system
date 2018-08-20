@@ -1,0 +1,137 @@
+body{
+	padding:15px;
+}
+*{
+	margin:0;
+	padding:0;
+}
+.main-left-menu{
+
+	.center{
+	  left:50%;
+	  transform:translateX(-50%);
+	}
+
+	height:700px;
+	background:linear-gradient(180deg,#ff704b,#eb317c);
+	float: left;
+	text-align:center;
+	box-shadow: 0 0 15px #999;
+	width:20%;
+	max-width:15rem;
+	@media(max-width:850px){
+		width:102%;
+		display: block;
+		height:60px;
+		max-width:none;
+	}
+
+	.logo{
+		width:240px;
+		height:160px;
+		position:relative;
+	  	left:50%;
+	  	top:50px;
+	  	transform:translateX(-47.5%);
+		img{
+			width:72px;
+			height:77px;
+		}
+		@media(max-width:850px){
+			width:16%;
+			min-width:60px;
+			height:60px;
+			margin-left:1rem;
+			position:static;
+			float:left;
+			left:0;
+			top:0;
+			transform: none;
+			text-align: left;
+			img{
+				width:3.5rem;
+				height:3.5rem;
+			}
+		}
+	}
+	.logo-description{
+	    font-size:10px;
+	    color:#FFF;
+		transform: translateX(-3.5%);
+	    .ldimg{
+	      margin:0 5px;
+	      width:18px;
+	      height:10px;
+	    }
+		@media(max-width:850px){
+			display:none;
+		}
+  	}
+
+	ul{
+		margin-top:60px;
+		@media(max-width:850px){
+			display: inline-block;
+			float:left;
+			margin-top:0;
+			width:80%;
+		}
+		li{
+			list-style:none;
+			height:70px;
+			line-height:60px;
+			border-left:10px solid transparent;
+			border-right:15px solid transparent;
+			transition:all 0.5s;
+			color:#FFF;
+			cursor:pointer;
+
+			@media(max-width:850px){
+				float:left;
+				display: inline-block;
+				height:100%;
+				width:13.3%;
+				border:none;
+				padding:0 1% 0 1%;
+			}
+
+
+
+			&:nth-last-of-type(2){
+				padding-left:17px;
+				@media(max-width:850px){
+					padding-left:0;
+				}
+			}
+			&:last-of-type{
+				margin-top:50px;
+				&:hover{
+					cursor:pointer;
+					background:none;
+					border-left:10px solid transparent;
+					font-weight:600;
+				}
+				@media(max-width:850px){
+					margin-top:0;
+				}
+			}
+			img{
+				width:25px;
+				height:25px;
+				margin-right:10px;
+				transform:translateY(4px);
+				@media(max-width:700px){
+					margin-right:0;
+				}
+			}
+			span{
+				@media(max-width:700px){
+					display:none;
+				}
+			}
+		}
+
+	}
+}
+
+

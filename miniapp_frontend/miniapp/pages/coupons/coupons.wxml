@@ -1,0 +1,96 @@
+   <view class='title'>优惠券</view>
+<view class='coupons'>
+   <view class='nav'>
+      <view 
+         class='nav-li'
+         style='{{textColor1}}'
+         bindtap='t1'
+      >待使用</view>
+      <view
+         class='nav-li'
+         style='{{textColor2}}'
+         bindtap='t2'
+      >已使用</view>
+      <view
+         class='nav-li'
+         style='{{textColor3}}'
+         bindtap='t3'
+      >已过期</view>
+   </view>
+
+   <view 
+      hidden='{{couponState !== "toUse"}}'
+      class='coupon-content'
+   >
+
+      <view 
+         class='coupon-li'
+         bindtap='toBuy'
+         data-couponid = '1'
+         data-couponname='满30减5'
+         data-couponmoney='5.00'
+      >
+         <view class='cli-content'>
+            <view class='coupon-img'>
+               ￥
+            </view>
+            <view class='coupon-detail'>
+               <view class='cd-name'>满30优惠5元</view>
+               <view class='cd-time'>到期时间: 2018/04/15</view>
+            </view>
+            <view class='coupon-price'>
+               ￥ 5.00
+            </view>
+         </view>
+         <view
+            class='to-use'
+
+         >
+            立即使用
+         </view>
+      </view>
+
+      <!-- <view
+         class='coupon-li'
+         wx:for="{{coupons}}"
+         wx:key = 'id'
+      >
+      <block>
+         <image
+            class='coupon-pic'
+            src='../../public/coupons-pic/{{item.pic}}'
+         >
+         </image>
+         <view class='coupon-detail'>
+            <view
+               class='coupon-name'
+            >{{item.name}}</view>
+            <view
+               class='coupon-validtime'
+            >{{item.valid_time}} 到期
+            </view>
+         </view>
+      </block>
+      </view> -->
+   </view>
+   
+   <view 
+      hidden='{{couponState !== "hadUse"}}'
+      class='coupon-content'
+   >
+      <image 
+         class='cimg'
+         src='../../public/coupons-pic/used-coupon.png'
+      ></image>
+   </view>
+   <view 
+      hidden='{{couponState !== "hadExpire"}}'
+      class='coupon-content'
+   >
+      <image 
+         class='cimg'
+         src='../../public/coupons-pic/expire-coupon.png'
+      ></image>
+   </view>
+
+</view>

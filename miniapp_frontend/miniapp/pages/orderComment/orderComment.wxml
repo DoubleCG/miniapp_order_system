@@ -1,0 +1,50 @@
+<view class='orderComment'>
+   <view class='title'>
+      订单评价
+   </view>
+
+   <view
+      class='stars-comment'
+   >
+      <view class='stars-title'>
+         请为本单的整体体验做出评价
+      </view>
+      <view class='stars'>
+         <image 
+         wx:for='{{starLevel}}'
+         wx:for-index="idx"
+         wx:key='id'
+         class='stars-li'
+         data-level='{{idx}}'
+         bindtap='imageover'
+         src='{{item?selected:normal}}'></image>
+      </view>
+      <!-- <view class='tags'>
+         <view wx:for='{{tags}}' wx:key='id' class='tags-li'>
+            {{item}}
+         </view>
+      </view> -->
+
+   </view>
+
+   <view
+      class='words-comment'
+   >
+      <view class='words-title'>
+         给食堂的评价和建议
+      </view>
+      <textarea 
+         placeholder='这里评价和建议~'
+         class='words-area' 
+         bindblur="bindTextAreaBlur"
+         value='{{content}}'
+      ></textarea>
+
+   </view>
+
+
+   <button
+      class='finish-btn'
+      bindtap='finishComment'
+   >完成评价</button>
+</view>

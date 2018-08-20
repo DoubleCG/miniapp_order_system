@@ -1,0 +1,119 @@
+
+<view class='title'> 订单 </view>
+
+
+<view 
+   wx:if='{{isToTake}}'
+   class='ensureTakeBlock'
+>
+   <view class="window">
+			<view class="window-title">
+				删除
+			</view>
+
+			<view class="window-content">
+				<view class='window-content-p'>
+               是否要删除该订单?
+            </view>
+				<view class="window-content-btns">
+					<button 
+                  bindtap='ensureTake'
+                  class='window-content-btns-btn'>是</button>
+					<button
+                  bindtap='cancelTake'
+                  class='window-content-btns-btn'>否</button>
+				</view>
+			</view>
+		</view>
+</view>
+
+
+<scroll-view
+   scroll-y
+   bindscrolltolower='getMoreOrders'
+   class='orderForm'
+>
+   <view class='no-list' wx:if='{{!orderForms.length}}'>
+      目前还没有订单~
+   </view>
+
+   <view class='order-li' wx:for='{{orderForms}}' wx:key='id' >
+   <block>
+      <view class='order-li-title'>
+         订单号： {{item.id}}
+         <image
+            data-id='{{item.id}}'
+            bindtap='toTake'
+            class='order-img'
+            src='../../public/baseImg/transh.png'
+         ></image>
+      </view>
+
+      <view class='order-food-li'>
+
+         <view
+            bindtap='showOrderDetail'
+            data-id='{{item.id}}'
+            class='order-talk'
+         >
+
+            <image 
+               class='order-food-li-img'
+               src='{{item.food[0].pic}}'
+            ></image>
+
+            <view class='order-content'>
+               <view class='order-createdAt'> 
+                  订单日期：{{item.created_at}}
+               </view>
+               <view class='order-content-name'> 
+                  订单详情：{{item.food[0].name}}{{ (item.food.length>1)?' ......':''}}>>    
+                  </view>
+            </view>
+
+            <view class='order-result'>
+               <view class='order-status'>
+                  {{item.status==0?"未付款 ":item.status==1?"已付款":item.status==2?"已过期":"已退款"}} ￥{{item.price}}
+               </view>
+               <view class='order-price'>  </view>
+            </view>
+
+         </view>
+
+
+         <view class='order-todo' wx:if='{{item.status!==2}}'>
+          <view wx:if="{{item.status===0}}"> 
+            <view
+               class='order-topay-btn'
+               bindtap='rePay'
+               data-orderid = '{{item.id}}'
+            >继续付款
+            </view>
+         </view>
+         <view wx:else>
+            <view 
+               class='order-tocomment'
+               bindtap='toComment'
+               style='{{ (item.state!=2 || item.comment)?"color:#999;border-color:#999":"" }}'
+               data-orderid = '{{item.id}}'
+               data-state = '{{item.state}}'
+               data-comment = '{{item.comment}}'
+            >
+                 {{ item.state!=2?"尚未取餐":
+                     item.comment?"已评价":"我要评价"
+                  }}  
+            </view>
+            <view 
+               class='order-again'
+               bindtap='showPayCode'
+               data-orderid = '{{item.id}}'
+            >再来一单
+            </view>
+         </view>
+
+         </view>
+      </view>
+   </block>
+   </view>
+
+</scroll-view>

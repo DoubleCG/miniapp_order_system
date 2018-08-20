@@ -1,0 +1,22 @@
+<view class='orderComment'>
+   <view class='title'>
+      反馈问题
+   </view>
+
+   <view
+      class='words-comment'
+   >
+      <textarea 
+         placeholder='这里评价和建议~'
+         class='words-area' 
+         bindblur="bindTextAreaBlur"
+         value='{{content}}'
+      ></textarea>
+
+   </view>
+
+   <button
+      class='finish-btn'
+      bindtap='finishComment'
+   >完成</button>
+</view>

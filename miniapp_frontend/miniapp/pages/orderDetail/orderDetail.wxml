@@ -1,0 +1,147 @@
+   <view class='title'> 订单详情 </view>
+
+<view 
+   wx:if='{{isToTake}}'
+   class='ensureTakeBlock'
+>
+   <view class="window">
+			<view class="window-title">
+				删除
+			</view>
+
+			<view class="window-content">
+				<view class='window-content-p'>
+               请确保取到餐品再确定
+            </view>
+				<view class="window-content-btns">
+					<button 
+                  bindtap='ensureTake'
+                  class='window-content-btns-btn'>确定</button>
+					<button
+                  bindtap='cancelTake'
+                  class='window-content-btns-btn'>取消</button>
+				</view>
+			</view>
+		</view>
+</view>
+
+
+<view class='orderDetail'>
+   <view class='warm-tip'>
+      <image src='{{warmTipPic}}'></image>
+      <view class='tip-title'>
+         为了确保餐品新鲜
+      </view>
+      <view class='tip-word'>
+         建议自提顾客在25分钟内前去取餐
+      </view>
+      <view
+         wx:if='{{state!==2}}'
+         class='tip-btn'
+         bindtap='toTake'
+         style='{{tipBtn}}'
+      >确定取餐
+      </view>
+      <view
+         wx:else
+         class='tip-btn1'
+      >已经取餐
+      </view>
+   </view>
+
+
+   <view class='content'>
+
+      <view class='send-tip'>订单详情</view>
+      <view class='dishs'>
+         <view class='dishs-li-food' wx:for='{{theOrder.food}}' wx:key='id'>
+            <block>
+               <image class='dishs-li-food-pic' src='{{item.pic}} '></image>
+                <view class='dishs-li-food-name'>{{item.name}}</view>
+                <view class='dishs-li-food-count'>×{{item.number}}</view>
+                <view class='dishs-li-food-price'>￥{{item.number*item.price}}</view>
+            </block>
+         </view>
+         <view wx:if='{{haveFoodBox}}'  class='dishs-li'>
+            <text>餐盒</text>
+            <view class='dishs-li-addcount'>￥{{boxMoney}}</view>
+         </view>
+         <view wx:if='{{haveSendFare}}'  class='dishs-li'>
+            <text>配送费</text>
+            <view class='dishs-li-addcount'>￥{{sendMoney}}</view>
+         </view>
+         <view wx:if='{{haveOnlinePay}}'  class='dishs-li'>
+            <text>在线支付立减优惠</text>
+            <view class='dishs-li-discount'>-￥{{onlinePayCoupon}}</view>
+         </view>
+         <view wx:if='{{haveUseCoupon}}'  class='dishs-li'>
+            <text>使用优惠券</text>
+            <view class='dishs-li-discount'>-￥{{couponMoney}}</view>
+
+         </view>
+         <view wx:if='{{haveUseRedPacket}}'  class='dishs-li'>
+            <text>红包</text>
+            <view class='dishs-li-discount'>-￥{{redPacketMoney}}</view>
+         </view>
+         <view class='dishs-li'>
+            <view class='dish-contactshop'>联系商家</view>
+            <view class='dish-totalcount'>实付：<span>￥{{factPayMoney}}</span></view>
+         </view>
+      </view>
+
+
+      <view class='order-info'>
+         <view class='order-info-li orde-info-orderid'>
+            <text>订单号</text>
+            <view class='send-info-li-content'>
+               {{orderid}}
+            </view>            
+         </view>
+         <view class='order-info-li orde-info-payway'>
+            <text>支付方式</text>
+            <view class='send-info-li-content'>
+               在线支付
+            </view>
+         </view>
+         <view class='order-info-li orde-info-createAt'>
+            <text>下单时间</text>
+            <view class='send-info-li-content'>
+               {{theOrder.created_at}}
+            </view>
+         </view>
+         <view class='order-info-li orde-info-remark'>
+            <text>订单备注</text>
+            <view class='send-info-li-content'>
+               不需要餐具 
+            </view>
+         </view>
+      </view>
+
+
+         <view class='send-tip'>配送信息</view>
+      <view class='send-info'>
+         <view class='send-info-li send-info-getTime'>
+            <text>送达时间</text>
+            <view class=' send-info-li-content'>尽快送达</view>
+         </view>
+         <view class='send-info-li send-info-address'>
+            <text>收货地址</text>
+            <view class='send-info-li-content'>{{theOrder.address}}</view>
+         </view>
+         <view class='send-info-li send-info-way'>
+            <text>配送方式</text>
+            <view class='send-info-li-content'>专送</view>
+         </view>
+         <view class='send-info-li send-info-who'>
+            <text>配送骑手</text>
+            <view class='send-info-li-content'>
+               保密
+            </view>
+         </view>
+      </view>
+
+
+
+
+   </view>
+</view>

@@ -1,0 +1,275 @@
+
+  <!-- <canvas class='chooseFoodCanvas' canvas-id='chooseFoodCanvas'></canvas>   -->
+
+    <!-- 顶部的搜索餐品框 -->
+    <view class="nav-tab-wrp">
+        <input
+            id='search-input'
+            value='{{searchKeyword}}'
+            class='search-food-input' 
+            placeholder='请输入餐品名'
+            bindinput='searchFoods'
+        ></input>
+        <image
+        wx:if='{{isSearching}}'
+        bindtap='searchFinish'
+        class='searchImg'
+        src='../../public/baseImg/close.png'></image>
+    </view>
+
+      <scroll-view
+         scroll-y
+         hidden='{{!showSearchedFoods}}'
+         class='searchedFoods'>
+
+
+         <view wx:if="{{!searchedFoods.length}}">没有搜索到任何餐品~</view>
+
+          <view class='searchedFoods-li' wx:for="{{searchedFoods}}"  wx:key="id" >
+            <block>
+              <view class='searched-name'>{{item.name}}</view>
+              <view class='searched-price'>￥{{item.price}}</view>
+              <view class='searched-sales'>剩余:{{item.remain?item.remain:0}}</view>
+
+            <view class='searched-count-wrap'>
+               <view
+                  class="dish-item-count-plus"
+                  data-id="{{item.id}}"
+                  data-type='s'
+                  bindtap="addCount"
+               > ＋
+              </view>
+
+               <view 
+                  hidden="{{item.count == 0}}"
+                  class='dish-item-count-text'
+               >{{item.count}}
+               </view>
+
+                <view
+                  hidden="{{item.count == 0}}"
+                  class="dish-item-count-minus"
+                  data-id="{{item.id}}"
+                  data-type='s'
+                  bindtap="minusCount"
+               > －
+              </view>
+              
+            </view>
+          </block>
+        </view>
+
+
+
+      </scroll-view>
+
+
+    <!-- 偏底部的已经选择了的菜品单 -->
+   <view
+      hidden="{{showChosenFoods == false}}
+      class='black-wall'
+      bindtap='keepChoose'
+   >
+   </view>
+    <view
+        class='chosenFoods-part'
+        hidden="{{showChosenFoods == false}}
+    >
+
+    <view class='chosenFoods-title'>
+         已选餐品
+
+    </view>
+    <view class='chosenFoods' >
+        <view
+            class='chosenFoods-li'
+            wx:for="{{chosenFoods}}" 
+            wx:key = 'id' 
+        >
+         <block>
+            <view
+                class='chosenFoods-li-name'
+            >
+                {{item.name}}
+            </view>
+
+            <view
+                class='chosenFoods-li-count-wrp'
+            >
+                <view
+                    class='dish-item-count-plus'
+                    bindtap = 'addCount'
+                    data-id="{{item.id}}" 
+                     data-type='t'
+                > ＋
+                </view>
+                <view class='dish-item-count-text'>
+                    {{item.count}}
+                </view>
+               <view 
+                    class='dish-item-count-minus'
+                    bindtap = 'minusCount'
+                    data-id="{{item.id}}" 
+                     data-type='t'
+                >－
+                </view>
+            </view>
+
+            <view
+                class='chosenFoods-li-price'
+            >
+                 ¥{{item.price}}
+            </view>
+        </block> 
+        </view>
+         <view 
+            hidden = '{{!couponid}}'
+            class='theCoupon'
+         >
+            {{couponid?"已选优惠券：" + couponname:""}}
+            <span
+               bindtap='removeCoupon'
+            >
+               X
+            </span>
+         </view>
+    </view>
+   </view>
+
+
+    <!-- 底部的展示总价框 -->
+    <view class="cart-wrp">
+    
+        <view class="cart-total">
+            <view 
+                class="cart-icon-wrp"
+                bindtap='showChoose'
+            >
+                <image 
+                  style="{{bigCart}}"
+                  class="cart-icon" src="./../../public/pic/orderBox.png" />
+                <text class="cart-total-num bc_red">{{total.count}}</text>
+            </view>
+            <text class="cart-total-price">￥{{total.money}}</text>
+        </view>
+
+        <!-- 跳转到支付页面的按钮 -->
+         <view
+               class="cart-item-btn"
+               hover-class="navigator-hover"
+               bindtap = 'toPay'
+         >选好了
+         </view>
+
+    </view>
+
+
+
+
+<view class="menu-wrp">
+
+    <!-- 左栏的菜品分类 -->
+    <scroll-view scroll-y="true" class="left-side" >
+        <block wx:for="{{menus}}" wx:key="id" wx:for-item="menu">
+            <view class="menu-item" data-id="{{menu.id}}" bindtap="selectMenu">
+                <view class="menu-item-wrp">
+
+                <!-- 如果所选的菜单id等于循环中的这个菜单id，则avtive -->
+                    <view class="{{selectedMenuId == menu.id ? 'bc_red' : 'bc_gray'}} m-item-icon">
+                        <image class="image" src="{{menu.pic}}" />
+                    </view>
+                    <view>
+                        <text class="m-item-title">{{menu.name}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+
+    <!-- 右栏的每个分类所显示的内容 -->
+    <scroll-view 
+        scroll-y="true"
+        scroll-into-view="{{toView}}" 
+        bindscrolltolower='toLowest'
+        bindscroll='toScroll'
+        scroll-top='{{rScrollTop}}'
+        class="right-side"
+    >
+        <block 
+            wx:for="{{menus}}" 
+            wx:key="id" 
+            wx:for-item="menu"
+        >
+            <view>
+                <view 
+                    id="{{'v'+menu.id}}" 
+                    class="dish-category-title"
+                >{{menu.name}}
+                </view>
+                <block wx:for="{{menu.dishs}}" wx:key="id" wx:for-item="dish">
+                    <view class="dish-item">
+                        <view class="dish-item-wrp">
+                            <view class="dish-item-pic">
+                                <image 
+                                bindtap='showDishDetail'
+                                data-id = '{{dish.id}}'
+                                class="image" src="{{dish.pic}}" />
+                            </view>
+                            <view class="dish-item-info">
+                              <view class="dish-item-name">
+                                 {{dish.name}}
+                              </view>
+              <!-- this part for start-level -->
+                              <view class='dish-item-star'>
+                                 <image class="star-image" src='{{selectedSrc}}' wx:for="{{dish.averageLevel}}" wx:key='id'>
+                                    </image>
+                              </view>
+                                <view class="dish-item-sales">
+                                  已售{{dish.sales}}   剩余{{dish.remain?dish.remain:0}}
+                                </view>
+                                <view class="dish-item-money">
+                                    ¥{{dish.price}}
+                                </view>
+                            </view>
+
+                        <!-- 计算餐品数目部分 -->
+                            <view class="dish-item-count" style="">
+                            <!-- 如果是没有选择过该餐品，则不显示减号 -->
+
+                                <view 
+                                 class="dish-item-count-plus"
+                                 data-id="{{dish.id}}"
+                                 data-type="m"
+                                 bindtap="addCount"
+                                 > ＋
+                                </view>
+                                <!-- 所选餐品数目,如果为0,则不显示 -->
+                                <view class="dish-item-count-text">
+                                    <text hidden="{{dish.count == 0}}">{{dish.count}}</text>
+                                </view>
+                                    <view 
+                                       data-id="{{dish.id}}"
+                                       data-type="m"
+                                       hidden="{{dish.count == 0}}" 
+                                       class="dish-item-count-minus" 
+                                       bindtap="minusCount"
+                                    > －
+                                    </view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </block>
+
+
+        <!-- ------Get all chosen food-------->
+        <view class='allChosenFood' hidden="{{showChosenFood == false}}">
+            
+        </view>
+
+        <!-- 目前菜品列表底部还没有东西需要展示 -->
+         <!-- <view class="dish-footer"></view> -->
+
+    </scroll-view>
+</view>

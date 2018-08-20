@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ce9307a7-c049-470c-9af5-d4fe81d233df" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/storage/app/miniapp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/miniapp/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/miniapp/pages/address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/miniapp/pages/address/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/miniapp/pages/chooseFood/chooseFood.js" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/miniapp/pages/chooseFood/chooseFood.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/miniapp/pages/chooseFood/chooseFood.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/miniapp/pages/chooseFood/chooseFood.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/miniapp/pages/chooseFood/chooseFood.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/miniapp/pages/chooseFood/chooseFood.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/miniapp/pages/chooseOK/chooseOK.js" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/miniapp/pages/chooseOK/chooseOK.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/miniapp/pages/orderDetail/orderDetail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/miniapp/pages/orderDetail/orderDetail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/ejs/main-order-detail.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/ejs/main-order-detail.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/js/assist.js" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/js/assist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/js/main-dish-management.js" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/js/main-dish-management.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/js/main-money-statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/js/main-money-statistics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/js/main-order-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/js/main-order-detail.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>typesDele</find>
+      <find>theName</find>
+      <find>销售</find>
+      <find>销量</find>
+      <find>mRankwaySelect</find>
+      <find>checkSales</find>
+      <find>!!</find>
+      <find>G.mDishesRankKeyData</find>
+      <find>G.mDishesRankData</find>
+      <find>initializeChangeBtns</find>
+      <find>0.1</find>
+      <find>小于</find>
+      <find>未配送</find>
+      <find>未</find>
+      <find>配送</find>
+      <find>成功</find>
+      <find>checkDish</find>
+      <find>checkDishes</find>
+      <find>RankOnProperty</find>
+      <find>添加成功</find>
+      <find>initialize</find>
+      <find>rankwaySelect</find>
+      <find>theDishName</find>
+      <find>dishesData</find>
+      <find>dishsData</find>
+      <find>getDishesData</find>
+      <find>queryBtn</find>
+      <find>checkOrders</find>
+      <find>hasInitializePageChooser</find>
+      <find>updateOrdersData</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/storage/app" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/storage/app/public/less/main.less" />
+        <option value="$PROJECT_DIR$/storage/app/public/ejs/main-comment-management.ejs" />
+        <option value="$PROJECT_DIR$/storage/app/public/less/main-exit.less" />
+        <option value="$PROJECT_DIR$/storage/app/public/ejs/main-left-menu.ejs" />
+        <option value="$PROJECT_DIR$/storage/app/public/js/login.js" />
+        <option value="$PROJECT_DIR$/storage/app/public/less/login.less" />
+        <option value="$PROJECT_DIR$/resources/views/login.html" />
+        <option value="$PROJECT_DIR$/storage/app/public/less/main-left-menu.less" />
+        <option value="$PROJECT_DIR$/storage/app/public/less/main-comment-management.less" />
+        <option value="$PROJECT_DIR$/storage/app/public/ejs/main-send-management.ejs" />
+        <option value="$PROJECT_DIR$/storage/app/public/less/main-dish-management.less" />
+        <option value="$PROJECT_DIR$/storage/app/public/less/main-order-detail.less" />
+        <option value="$PROJECT_DIR$/storage/app/public/less/main-send-management.less" />
+        <option value="$PROJECT_DIR$/storage/app/public/ejs/main-header.ejs" />
+        <option value="$PROJECT_DIR$/storage/app/public/less/main-money-statistics.less" />
+        <option value="$PROJECT_DIR$/storage/app/public/js/main-exit.js" />
+        <option value="$PROJECT_DIR$/storage/app/public/js/main-send-management.js" />
+        <option value="$PROJECT_DIR$/storage/app/public/ejs/main-exit.ejs" />
+        <option value="$PROJECT_DIR$/storage/app/public/ejs/main-footer.ejs" />
+        <option value="$PROJECT_DIR$/storage/app/public/ejs/main-dish-management.ejs" />
+        <option value="$PROJECT_DIR$/storage/app/public/ejs/main-money-statistics.ejs" />
+        <option value="$PROJECT_DIR$/storage/app/public/js/main-left-menu.js" />
+        <option value="$PROJECT_DIR$/storage/app/public/js/main-comment-management.js" />
+        <option value="$PROJECT_DIR$/storage/app/public/js/main-money-statistics.js" />
+        <option value="$PROJECT_DIR$/storage/app/public/js/assist.js" />
+        <option value="$PROJECT_DIR$/storage/app/public/ejs/main-order-detail.ejs" />
+        <option value="$PROJECT_DIR$/storage/app/public/js/main-order-detail.js" />
+        <option value="$PROJECT_DIR$/storage/app/public/js/main-dish-management.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/storage/app/public/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="540" />
+    <option name="y" value="-35" />
+    <option name="width" value="765" />
+    <option name="height" value="635" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="miniappshop2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniappshop2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miniappshop2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniappshop2" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miniappshop2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniappshop2" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miniappshop2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniappshop2" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miniappshop2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniappshop2" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="main-&#9;FILE&#9;file://D:/w1/miniappshop2/storage/app/public/js/main-comment-management.js&#10;left&#9;FILE&#9;file://D:/w1/miniappshop2/storage/app/public/js/main-left-menu.js&#10;{&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\w1\miniappshop2\storage\app\public\img\main-comment-management" />
+      <recent name="D:\w1\miniappshop2\storage\app\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\w1\miniappshop2\storage\app\public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce9307a7-c049-470c-9af5-d4fe81d233df" name="Default" comment="" />
+      <created>1523670186559</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523670186559</updated>
+      <workItem from="1523670187934" duration="424000" />
+      <workItem from="1523670645354" duration="11762000" />
+      <workItem from="1523699583498" duration="3589000" />
+      <workItem from="1523705126416" duration="7646000" />
+      <workItem from="1523846703784" duration="102894000" />
+      <workItem from="1524100678217" duration="22795000" />
+      <workItem from="1524124873044" duration="9036000" />
+      <workItem from="1524139859763" duration="4301000" />
+      <workItem from="1524188512290" duration="19098000" />
+      <workItem from="1524531721171" duration="5400000" />
+      <workItem from="1524624007476" duration="2548000" />
+      <workItem from="1524705567179" duration="1671000" />
+      <workItem from="1524831102835" duration="3828000" />
+      <workItem from="1524835469552" duration="753000" />
+      <workItem from="1524836365168" duration="188000" />
+      <workItem from="1524886266270" duration="1090000" />
+      <workItem from="1524924544287" duration="323000" />
+      <workItem from="1525175172473" duration="2412000" />
+      <workItem from="1526003938504" duration="818000" />
+      <workItem from="1531191742038" duration="635000" />
+      <workItem from="1531396537691" duration="225000" />
+      <workItem from="1531396963609" duration="285000" />
+      <workItem from="1531397925205" duration="19000" />
+      <workItem from="1531811538796" duration="28000" />
+      <workItem from="1531882135930" duration="665000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="202433000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17317708" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.3294271" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.25414366" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.3294271" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22135417" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="11" weight="0.32965517" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-dish-management.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-money-statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15960">
+          <caret line="840" column="30" selection-start-line="840" selection-start-column="30" selection-end-line="840" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-order-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="35" selection-start-line="40" selection-start-column="25" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/assist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4902">
+          <caret line="258" column="45" selection-start-line="258" selection-start-column="40" selection-end-line="258" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-order-detail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-send-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-dish-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6821">
+          <caret line="359" column="41" lean-forward="true" selection-start-line="359" selection-start-column="41" selection-end-line="359" selection-end-column="41" />
+          <folding>
+            <marker date="1526004514924" expanded="false" signature="8505:8518" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19342:20406" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19404:19487" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19831:20145" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="20168:20385" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23586:24212" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23665:23784" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23914:24183" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-left-menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-comment-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-dish-management.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-money-statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19320">
+          <caret line="840" column="30" selection-start-line="840" selection-start-column="30" selection-end-line="840" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-order-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1127">
+          <caret line="49" column="35" selection-start-line="40" selection-start-column="25" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/assist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5934">
+          <caret line="258" column="45" selection-start-line="258" selection-start-column="40" selection-end-line="258" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-order-detail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-send-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-dish-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8487">
+          <caret line="369" column="23" lean-forward="true" selection-start-line="369" selection-start-column="23" selection-end-line="369" selection-end-column="23" />
+          <folding>
+            <marker date="1526004514924" expanded="false" signature="8505:8518" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19342:20406" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19404:19487" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19831:20145" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="20168:20385" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23586:24212" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23665:23784" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23914:24183" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-left-menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-comment-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-dish-management.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-money-statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19320">
+          <caret line="840" column="30" selection-start-line="840" selection-start-column="30" selection-end-line="840" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-order-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1127">
+          <caret line="49" column="35" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/assist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5934">
+          <caret line="258" column="45" selection-start-line="258" selection-start-column="40" selection-end-line="258" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-order-detail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-send-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-dish-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8740">
+          <caret line="380" column="61" selection-start-line="380" selection-start-column="61" selection-end-line="380" selection-end-column="61" />
+          <folding>
+            <marker date="1526004514924" expanded="false" signature="8505:8518" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19342:20406" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19404:19487" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19831:20145" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="20168:20385" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23586:24212" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23665:23784" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23914:24183" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-left-menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-comment-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-dish-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6327">
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-dish-management.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-money-statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15960">
+          <caret line="840" column="30" selection-start-line="840" selection-start-column="30" selection-end-line="840" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-order-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="35" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-order-detail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-send-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/assist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4902">
+          <caret line="258" column="45" selection-start-line="258" selection-start-column="40" selection-end-line="258" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-left-menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-comment-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-dish-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7429">
+          <caret line="391" selection-start-line="391" selection-end-line="391" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-dish-management.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-money-statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15960">
+          <caret line="840" column="30" selection-start-line="840" selection-start-column="30" selection-end-line="840" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-order-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2603">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-send-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-order-detail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/assist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-order-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-money-statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="840" column="30" selection-start-line="840" selection-start-column="30" selection-end-line="840" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-dish-management.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-dish-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6821">
+          <caret line="359" column="41" selection-start-line="359" selection-start-column="41" selection-end-line="359" selection-end-column="41" />
+          <folding>
+            <marker date="1526004514924" expanded="false" signature="8505:8518" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19342:20406" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19404:19487" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="19831:20145" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="20168:20385" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23586:24212" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23665:23784" ph="..." />
+            <marker date="1526004514924" expanded="true" signature="23914:24183" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-comment-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-left-menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/ejs/main-order-detail.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/public/js/main-send-management.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

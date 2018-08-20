@@ -1,0 +1,28 @@
+<view class="pages-address">
+
+  <view class="addr-title"><span></span>当前默认地址</view>
+  <view class="addAddress flex">
+
+    <view class="inputWap flex bg-f">
+
+      <view class="c-input border-bottom flex po-re">
+        <input maxlength="8" placeholder="暂无默认收货人姓名" value="{{myName}}" bindinput="bindMyName" disabled></input>
+        <!-- <image src="{{'../../resources/dw.png'}}" class='dingwei' bindtap="getAddress"></image> -->
+      </view>
+
+      <view class="c-input border-bottom flex">
+        <input type="number" value="{{myPhone}}" bindinput="bindMyPhonee"  placeholder="暂无默认手机号码" maxlength="11" disabled></input>
+      </view>
+
+      <view class="c-input flex">
+        <input value="{{myAddress}}" bindinput="bindMyAddress" placeholder="暂无默认详细地址" disabled></input>
+      </view>
+      
+    </view> 
+
+  </view>
+
+  <view class="my-button" bindtap="getAddress">选取默认地址</view>   
+  <view class="back-button" bindtap="backOrPay">{{isShopping?"去付款":"返回"}}</view>   
+
+</view>

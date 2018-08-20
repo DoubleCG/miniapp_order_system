@@ -1,0 +1,28 @@
+{
+  "pages":[
+   "pages/index/index",
+   "pages/sayProblem/sayProblem",
+   "pages/orderComment/orderComment",
+   "pages/chooseFood/chooseFood",
+   "pages/chooseOK/chooseOK",
+   "pages/remark/remark",
+   "pages/my/my",
+   "pages/address/address",
+   "pages/orderForm/orderForm",
+   "pages/coupons/coupons",
+   "pages/memberscore/memberscore",
+   "pages/orderDetail/orderDetail",
+   "pages/singleDish/singleDish"
+  ],
+  "window":{
+    "backgroundColor": "#233",
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText":"五宫格点餐",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "debug":true
+
+}
+

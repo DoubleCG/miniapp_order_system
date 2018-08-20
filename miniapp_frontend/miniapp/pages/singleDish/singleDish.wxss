@@ -1,0 +1,185 @@
+.singleDish{
+   padding:10rpx;
+}
+.dish-name{
+   font-size:40rpx;
+   height:60rpx;
+   background-color:#C44;
+   color:#fff;
+   font-weight:600;
+   text-align:center;
+}
+.pic-part{
+   height:500rpx;
+}
+ .img{
+   height:500rpx;
+   width:100%;
+   margin-bottom:-100rpx;
+} 
+.intro{
+   height:100rpx;
+   color:#fff;
+}
+
+
+.detail-part{
+   margin-top:10rpx;
+   box-shadow:0 0 10rpx #999;
+}
+.food-detail{
+   min-height:100rpx;
+}
+.detail-tag{
+   display: inline-block;
+   box-shadow: 0 0 5rpx #999;
+   margin:15rpx;
+   padding:5rpx 10rpx;
+   color:#C34;
+}
+
+.no-tags{
+   text-align: center;
+   min-height:100rpx;
+}
+
+.end{
+   margin-top:10rpx;
+   height:80rpx;
+   box-shadow:0 0 10rpx #999;
+}
+.end:after{
+       display:block;clear:both;content:"";visibility:hidden;height:0;
+}
+.end-price{
+   float:left;
+   font-size:50rpx;
+   color:#C44;
+}
+
+.end-count-part{
+   float:right;
+   font-size:50rpx;
+   transform: translateY(-10rpx);
+}
+
+.end-minusImg{
+   display:inline-block;
+   margin:10rpx;
+   font-weight:600;
+   color:orange;
+   width:50rpx;
+   height:50rpx;
+   line-height:50rpx;
+   border:2rpx solid #999;
+   border-radius: 50%;
+   box-shadow: 0 0 5rpx #999;
+}
+
+.end-count{
+   display:inline-block;
+   margin:10rpx;
+   color:#888;
+}
+.end-plusImg{
+   display:inline-block;
+   margin:10rpx;
+   font-weight:600;
+   color:orange;
+   width:50rpx;
+   height:50rpx;
+   line-height:50rpx;
+   border:2rpx solid #999;
+   border-radius: 50%;
+   box-shadow: 0 0 5rpx #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cart-wrp{
+  height: 100rpx;
+  position: fixed;
+  bottom: 0rpx;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  z-index: 10;
+  color: black
+}
+.cart-total{
+  padding-left: 30rpx;
+  width:375rpx;
+  margin-right:100rpx;
+}
+.cart-icon-wrp{
+  width: 110rpx;
+  height: 90rpx;
+  position: absolute;
+  top:-4rpx;
+}
+.cart-icon{
+   margin-top:5rpx;
+  width: 90rpx;
+  height: 90rpx;
+  transition:0.5s;
+}
+.cart-total-num{
+    display: inline-block;
+    width: 36rpx;
+    height: 36rpx;
+    font-size: 22rpx;
+    color: white;
+    line-height: 36rpx;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    right: 2rpx;
+}
+.cart-total-price{
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    font-size: 36rpx;
+    color: #ed7e05;
+    line-height: 100rpx;
+    text-align: center;
+    padding-left: 110rpx;
+}
+
+.cart-back-btn{
+    width: 100rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #999;
+    font-size: 28rpx;
+    color: #fff;
+    text-align: center;
+    margin-right:5rpx;
+}
+.cart-pay-btn{
+    width: 160rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    background: #f5a22d;
+    text-align: center;
+    color: #fff;
+}

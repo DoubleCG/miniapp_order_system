@@ -1,0 +1,528 @@
+.main-dish-management {
+  float: left;
+  background-color: #f0f0f0;
+  width: 1060px;
+  height: 660px;
+  padding: 20px;
+  display: none;
+  overflow-y: scroll;
+}
+.main-dish-management .divider {
+  width: 98%;
+  line-height: 0px;
+  margin: 100px 0 20px 2%;
+  text-align: center;
+  font-size: 14px;
+  color: #BBB;
+}
+.main-dish-management .divider span {
+  width: 42%;
+  border-top: 2px solid #CCC;
+  display: inline-block;
+}
+.main-dish-management .divider span:first-of-type {
+  float: left;
+}
+.main-dish-management .divider span:last-of-type {
+  float: right;
+}
+.main-dish-management .dishs .detail {
+  position: relative;
+  margin-top: 30px;
+}
+.main-dish-management .dishs .detail .detail-li {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 15px;
+}
+.main-dish-management .dishs .detail .detail-li input {
+  display: inline-block;
+}
+.main-dish-management .dishs .detail .detail-li input[name="keyword"] {
+  border: 1px solid #999;
+  border-radius: 3px;
+  height: 20px;
+  width: 120px;
+}
+.main-dish-management .dishs .detail .detail-li input[name='lower_price'],
+.main-dish-management .dishs .detail .detail-li input[name='upper_price'] {
+  border: 1px solid #999;
+  border-radius: 3px;
+  height: 20px;
+  width: 40px;
+}
+.main-dish-management .dishs .detail .detail-li input[type='checkbox'] {
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: black;
+}
+.main-dish-management .dishs .detail .rankway-select {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid #999;
+  padding: 2px;
+  cursor: pointer;
+  height: 24px;
+  overflow: hidden;
+  transition: all 0.3s;
+  padding: 0;
+  background-color: #FFF;
+  font-size: 14px;
+}
+.main-dish-management .dishs .detail .rankway-select img {
+  width: 16px;
+  height: 16px;
+  transform: translateY(2px);
+}
+.main-dish-management .dishs .detail .rankway-select span {
+  padding-left: 5px;
+}
+.main-dish-management .dishs .detail .rankway-select .options {
+  margin-top: 4px;
+  border-top: 2px solid #999;
+}
+.main-dish-management .dishs .detail .rankway-select .options > div {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+.main-dish-management .dishs .detail .rankway-select .options > div:hover {
+  background-color: #f7424f;
+}
+.main-dish-management .dishs .detail button {
+  color: #FFF;
+  background-color: #f7424f;
+  width: 90px;
+  height: 30px;
+  line-height: 25px;
+  font-size: 12px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.main-dish-management .dishs .dishs-data {
+  margin: 15px;
+  width: 99%;
+  border: 2px solid #CCC;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.main-dish-management .dishs .dishs-data thead tr {
+  background-color: #dcdcdc;
+  color: #222;
+}
+.main-dish-management .dishs .dishs-data thead tr th {
+  height: 40px;
+  font-weight: 300;
+  width: 120px;
+  border: none;
+}
+.main-dish-management .dishs .dishs-data tbody tr {
+  background-color: #FFF;
+  color: #222;
+}
+.main-dish-management .dishs .dishs-data tbody tr:hover {
+  background-color: #f5f5f5;
+}
+.main-dish-management .dishs .dishs-data tbody tr th {
+  border-left: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  height: 40px;
+  font-weight: 300;
+  width: 120px;
+}
+.main-dish-management .dishs .dishs-data tbody tr th img.dish-img {
+  width: 80px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main-dish-management .dishs .dishs-data tbody tr th img.icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main-dish-management .dishs .dishs-data tbody tr th button {
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #FA4E5C;
+}
+.main-dish-management .dishs .dishs-data tbody tr th button.isHot-on {
+  background-color: #FFF;
+  color: #FA4E5C;
+}
+.main-dish-management .dishs .dishs-data tbody tr th button.isHot-off {
+  background-color: #FA4E5C;
+  color: #FFF;
+}
+.main-dish-management .dishs .dishs-data tbody tr th:first-of-type {
+  border-left: none;
+}
+.main-dish-management .dishs .dishs-data tfoot tr {
+  background-color: #FFF;
+  color: #222;
+  height: 60px;
+}
+.main-dish-management .dishs .dishs-data tfoot tr th {
+  border-left: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  height: 40px;
+  font-weight: 300;
+  width: 120px;
+}
+.main-dish-management .dishs .dishs-data tfoot tr th button {
+  cursor: pointer;
+  width: 140px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 30px;
+  border: 1px solid #CCC;
+  color: #FFF;
+  background-color: #FA4E5C;
+}
+.main-dish-management .dishs .dishs-data tfoot tr th button img {
+  width: 20px;
+  height: 20px;
+  transform: translateY(5px);
+}
+.main-dish-management .dishs .dishs-data tfoot tr th:first-of-type {
+  border-left: none;
+  text-align: center;
+  line-height: 60px;
+}
+.main-dish-management .dishs .dishs-data tfoot tr:last-of-type th {
+  border-bottom: none;
+}
+.main-dish-management .types .types-data {
+  margin: 15px;
+  width: 99%;
+  border: 2px solid #CCC;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.main-dish-management .types .types-data thead tr {
+  background-color: #dcdcdc;
+  color: #222;
+}
+.main-dish-management .types .types-data thead tr th {
+  height: 40px;
+  font-weight: 300;
+  width: 120px;
+  border: none;
+}
+.main-dish-management .types .types-data tbody tr {
+  background-color: #FFF;
+  color: #222;
+  height: 90px;
+}
+.main-dish-management .types .types-data tbody tr th {
+  border-left: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  height: 40px;
+  font-weight: 300;
+  width: 120px;
+}
+.main-dish-management .types .types-data tbody tr th img.type-img {
+  width: 80px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main-dish-management .types .types-data tbody tr th img.icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main-dish-management .types .types-data tbody tr th:first-of-type {
+  border-left: none;
+}
+.main-dish-management .types .types-data tfoot tr {
+  background-color: #FFF;
+  color: #222;
+  height: 60px;
+}
+.main-dish-management .types .types-data tfoot tr th {
+  border-left: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  height: 40px;
+  font-weight: 300;
+  width: 120px;
+}
+.main-dish-management .types .types-data tfoot tr th button {
+  cursor: pointer;
+  width: 140px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 30px;
+  border: 1px solid #CCC;
+  color: #FFF;
+  background-color: #FA4E5C;
+}
+.main-dish-management .types .types-data tfoot tr th button img {
+  width: 20px;
+  height: 20px;
+  transform: translateY(5px);
+}
+.main-dish-management .types .types-data tfoot tr th:first-of-type {
+  border-left: none;
+  text-align: center;
+  line-height: 60px;
+}
+.main-dish-management .types .types-data tfoot tr:last-of-type th {
+  border-bottom: none;
+}
+.main-dish-management .add-dishs-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.main-dish-management .add-dishs-part .window {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid #AAA;
+}
+.main-dish-management .add-dishs-part .window .title {
+  color: #FFF;
+  font-size: 18px;
+  padding-left: 20px;
+  line-height: 45px;
+  height: 45px;
+  background: linear-gradient(90deg, #F95B4B, #E7265D);
+}
+.main-dish-management .add-dishs-part .window .title img {
+  margin: 10px;
+  width: 24px;
+  height: 24px;
+  float: right;
+  cursor: pointer;
+}
+.main-dish-management .add-dishs-part .window form {
+  background-color: #FFF;
+  padding: 20px;
+}
+.main-dish-management .add-dishs-part .window form p {
+  color: #222;
+  font-size: 14px;
+}
+.main-dish-management .add-dishs-part .window form input,
+.main-dish-management .add-dishs-part .window form select {
+  padding-left: 10px;
+  height: 32px;
+  border-radius: 5px;
+  width: 94%;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  border: 2px solid #BBB;
+}
+.main-dish-management .add-dishs-part .window form > img {
+  width: 100px;
+  height: 70px;
+}
+.main-dish-management .add-dishs-part .window form select {
+  width: 97%;
+  height: 40px;
+}
+.main-dish-management .add-dishs-part .window form select option:last-of-type {
+  text-align: center;
+  color: #FFF;
+  background-color: #FA4E5C;
+}
+.main-dish-management .add-dishs-part .window form button {
+  height: 44px;
+  width: 140px;
+  background-color: #FA4E5C;
+  color: #fff;
+  border: none;
+  position: relative;
+  left: 50%;
+  margin-top: 20px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 5px #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-dish-management .add-types-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.main-dish-management .add-types-part .window {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid #AAA;
+}
+.main-dish-management .add-types-part .window .title {
+  color: #FFF;
+  font-size: 18px;
+  padding-left: 20px;
+  line-height: 45px;
+  height: 45px;
+  background: linear-gradient(90deg, #F95B4B, #E7265D);
+}
+.main-dish-management .add-types-part .window .title img {
+  margin: 10px;
+  width: 24px;
+  height: 24px;
+  float: right;
+  cursor: pointer;
+}
+.main-dish-management .add-types-part .window form {
+  background-color: #FFF;
+  padding: 20px;
+}
+.main-dish-management .add-types-part .window form p {
+  color: #222;
+  font-size: 14px;
+}
+.main-dish-management .add-types-part .window form input {
+  padding-left: 10px;
+  height: 36px;
+  border-radius: 5px;
+  width: 94%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 2px solid #BBB;
+}
+.main-dish-management .add-types-part .window form .toSelectImg {
+  width: 96%;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid #CCC;
+  background-color: #EFEFEF;
+  cursor: pointer;
+}
+.main-dish-management .add-types-part .window form .toSelectImg img:first-of-type {
+  float: left;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+}
+.main-dish-management .add-types-part .window form .toSelectImg img:last-of-type {
+  float: right;
+  position: relative;
+  top: 50%;
+  margin-right: 10px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+.main-dish-management .add-types-part .window form .toSelectImg span {
+  position: relative;
+  top: 50%;
+  font-size: 14px;
+  color: #555;
+  transform: translateY(-50%);
+  margin-left: 60px;
+  float: left;
+}
+.main-dish-management .add-types-part .window form .imgs {
+  width: 96%;
+  border: 2px solid #CCC;
+  display: none;
+}
+.main-dish-management .add-types-part .window form button {
+  height: 44px;
+  width: 140px;
+  background-color: #FA4E5C;
+  color: #fff;
+  border: none;
+  position: relative;
+  left: 50%;
+  margin-top: 20px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 5px #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-dish-management .ensure-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.main-dish-management .ensure-part .window {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #AAA;
+}
+.main-dish-management .ensure-part .window .title {
+  color: #FFF;
+  font-size: 18px;
+  padding-left: 20px;
+  line-height: 45px;
+  height: 45px;
+  background: linear-gradient(90deg, #F95B4B, #E7265D);
+}
+.main-dish-management .ensure-part .window .title img {
+  margin: 10px;
+  width: 24px;
+  height: 24px;
+  float: right;
+  cursor: pointer;
+}
+.main-dish-management .ensure-part .window .content {
+  background-color: #fff;
+  height: 200px;
+}
+.main-dish-management .ensure-part .window .content p {
+  text-align: center;
+  padding-top: 60px;
+}
+.main-dish-management .ensure-part .window .content .btns {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 15px;
+  margin-left: 10%;
+  width: 80%;
+}
+.main-dish-management .ensure-part .window .content .btns button {
+  width: 44%;
+  margin: 0 2%;
+  height: 28px;
+  line-height: 26px;
+  border: 2px solid #FA4A59;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-dish-management .ensure-part .window .content .btns button:first-of-type {
+  background-color: #FA4A59;
+  color: #FFF;
+}
+.main-dish-management .ensure-part .window .content .btns button:last-of-type {
+  background-color: #FFF;
+  color: #FA4A59;
+}

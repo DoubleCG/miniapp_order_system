@@ -1,0 +1,156 @@
+.title{
+   height:60rpx;
+   padding-top:10rpx;
+   background-color:#C54;
+   font-size:35rpx;
+   color:#FFF;
+   text-align: center;
+   background:linear-gradient(90deg,#F94E5B,#F32E74 90%);
+}
+
+.person{
+   padding:10px;
+   background:linear-gradient(90deg,#F94E5B,#F32E74 90%);
+   text-align: center;
+}
+.person:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;
+}
+
+.headImg{
+   border:1rpx solid #FFF;
+   border-radius: 50%;
+   overflow: hidden;
+   height:120rpx;
+   width:120rpx;
+}
+
+.detail{
+   text-align: center;
+}
+
+.nickname{
+   color: #fff;
+}
+
+.phone-icon{
+   width:30rpx;
+   height:30rpx;
+}
+
+.phonenumber{
+   color: #fff;
+}
+
+.skiptip{
+   float:right;
+   color:#fff;
+   font-size:50rpx;
+   margin-top:50rpx;
+   width:40rpx;
+   height: 40rpx;
+}
+
+
+.assets{
+   margin:20rpx;
+   box-shadow: 0 0 3px #999;
+   height:150rpx;
+
+}
+.assets-li{
+   border-right:1rpx solid #BBB;
+   width:33%;
+   height:100%;
+   float: left;
+}
+.assets-li:last-child{
+   border-right: none;
+}
+
+.money-packet{
+}
+.scores{
+}
+.coupons{
+}
+.money-packet-detail{
+   margin-top:20rpx;
+   text-align: center;
+   color:#f94e5b;
+   font-size:20rpx;
+}
+.money-packet-detail span{
+   font-size:50rpx;
+}
+.scores-detail{
+   margin-top:20rpx;
+   text-align: center;
+   font-size:50rpx;
+   color:#f94e5b;
+}
+.coupons-detail{
+   margin-top:20rpx;
+   text-align: center;
+   font-size:50rpx;
+   color:#f94e5b;
+}
+
+.total-consume{
+   height:100rpx;
+   margin-top:30px;
+   border-top:2px solid #CCC;
+   border-bottom:1px solid #999;
+
+}
+.total-consume-title{
+   text-align: left;
+   font-size:24rpx;
+   color:#999;
+   padding-left:10px;
+}
+.total-consume-data:after{
+   display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0;
+}
+.total-consume-money{
+   width:30%;
+   height:100%;
+   float:right;
+   font-size:24rpx;
+   text-align:center;
+}
+.total-consume-ordermunber{
+   float:right;
+   width:30%;
+   height:100%;
+   text-align:center;
+   font-size:24rpx;
+}
+.total-consume span{
+   font-size:42rpx;
+   color:#555;
+}
+
+.assets-text{
+   text-align:center;
+   font-size:24rpx;
+}
+
+
+.sayProblem{
+   position:absolute;
+   bottom:5%;
+   margin-top: 50rpx;
+   text-align: center;
+   font-size: 24rpx;
+   color:#AAA;
+   width:100%;
+}

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!--<link rel="stylesheet" href="https://mini.wggai.com/storage/css/main.css">-->
+    <link rel="icon" href="https://mini.wggai.com/storage/img/favicon.ico">
+    <link rel="stylesheet" href="https://mini.wggai.com/storage/css/main-left-menu.css">
+    <link rel="stylesheet" href="https://mini.wggai.com/storage/css/main-dish-management.css">
+    <link rel="stylesheet" href="https://mini.wggai.com/storage/css/main-send-management.css">
+    <link rel="stylesheet" href="https://mini.wggai.com/storage/css/main-order-detail.css">
+    <link rel="stylesheet" href="https://mini.wggai.com/storage/css/main-comment-management.css">
+    <link rel="stylesheet" href="https://mini.wggai.com/storage/css/main-money-statistics.css">
+    <link rel="stylesheet" href="https://mini.wggai.com/storage/css/main-exit.css">
+    <!-- <script defer src="https://mini.wggai.com/storage/js/main.js"></script> -->
+
+<title>五宫格点餐商户后台管理系统 | 主页</title>
+
+</head>
+<body>
+
+
+
+<div class='main-left-menu'>
+    <div class="logo">
+      <img src="https://mini.wggai.com/storage/img/login/logo.png">
+      <div class='logo-description'>
+       <img class='ldimg' src="https://mini.wggai.com/storage/img/login/spoon.png"/>
+      	<span>餐品管理系统后台商户端</span> 
+       <img class='ldimg' src="https://mini.wggai.com/storage/img/login/fork.png" />
+      </div>
+    </div>
+
+    <ul>
+    	<li><img src="https://mini.wggai.com/storage/img/main-left-menu/menu-dish-management.png">菜品管理</li>
+    	<li><img src="https://mini.wggai.com/storage/img/main-left-menu/menu-send-management.png">配送管理</li>
+    	<li><img src="https://mini.wggai.com/storage/img/main-left-menu/menu-order-detail.png">订单明细</li>
+    	<li><img src="https://mini.wggai.com/storage/img/main-left-menu/menu-comment-management.png">评论管理</li>
+    	<li><img src="https://mini.wggai.com/storage/img/main-left-menu/menu-money-statistics.png">营业额统计</li>
+      <li><img src="https://mini.wggai.com/storage/img/main-left-menu/menu-exit.png">登出</li>
+    </ul>
+</div>
+
+<div class="main-dish-management">
+
+	<div class='dishs'>
+		<div class="detail">
+			<div class='detail-li'>
+				关键词：<input class='keyword' name='keyword' type="text">
+			</div>
+
+			<div class='detail-li'>
+				价格区间：
+				<input class='lower_price' name='lower_price' type="text">
+				—
+				<input class='upper_price' name='upper_price' type="text">
+			</div>
+
+			<div class='rankway-select'>
+				<span>时间从新到旧</span>
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/down.png">
+				<div class='options'>
+					<div data-v="1">时间从新到旧</div>
+					<div data-v="2">时间从旧到新</div>
+					<div data-v="3">价格从高到低</div>
+					<div data-v="4">价格从低到高</div>
+					<div data-v="5">销量从高到低</div>
+					<div data-v="6">销量从低到高</div>
+				</div>
+			</div>
+
+			<button> 查询 </button>
+
+		</div>
+
+	    <table cellspacing="0" class="dishs-data">
+	      <thead>
+	        <tr>
+	          <th>ID</th>
+	          <th>图片</th>
+	          <th>名称</th>
+	          <th>所属类别</th>
+	          <th>价格(元)</th>
+	          <th>日均销量(份)</th>
+	          <th>每日限量(份)</th>
+	          <th>描述</th>
+	          <th>设置热销</th>
+	          <th>操作</th>
+	        </tr>
+	      </thead>
+	      <tbody></tbody>
+	      <tfoot>
+	      	<tr>
+				<th></th>	      		
+				<th colspan='9'>
+					<button>
+						<img src="https://mini.wggai.com/storage/img/main-dish-management/add.png">添加菜品
+					</button>
+				</th>	      		
+	      	</tr>
+	      </tfoot>
+	    </table>
+	</div>
+
+
+	<div class="divider">
+		<span></span>
+		<span></span>
+		以下是菜品类型列表
+
+	</div>
+
+	<div class='types'>
+	    <table cellspacing="0" class="types-data">
+	      <thead>
+	        <tr>
+	          <th>ID</th>
+	          <th>图片</th>
+	          <th>名称</th>
+	          <th>标签描述</th>
+	          <th>操作</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	      	<tr>
+	          <th>0001</th>
+	          <th>
+	          	<img class='type-img' src="../img/main-dish-management/egg.png">
+	          </th>
+	          <th>炒菜</th>
+	          <th>炒的菜</th>
+	          <th>
+	          	<img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/edit.png">
+				<img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/minus.png">
+	          </th>
+	        </tr>
+	        <tr>
+	          <th>0002</th>
+	          <th>
+				<img class='type-img' src="../img/main-dish-management/egg.png">
+	          </th>
+			  </th>
+	          <th>名称</th>
+	          <th>标签描述</th>
+	          <th>
+	          	<img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/edit.png">
+				<img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/minus.png">
+	          </th>
+	        </tr>
+	      </tbody>
+
+  	      <tfoot>
+	      	<tr>
+				<th></th>	      		
+				<th colspan='9'>
+					<button>
+						<img src="https://mini.wggai.com/storage/img/main-dish-management/add.png">添加类别
+					</button>
+				</th>	      		
+	      	</tr>
+	      </tfoot>
+	    </table>
+	</div>
+
+	<div class="add-dishs-part">
+		<div class="window">
+			<div class="title">
+				<span>添加菜品</span>
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/cross.png">
+			</div>
+			<form>
+				<p> 菜品名称 </p>
+				<input name='name' type="text">
+				<p> 菜品图片 </p>
+				<input name="img" type="file"> <img>
+
+				<p> 菜品所属类别 </p>
+				<select name="types">
+					<!--<option style='display:none;'>选择/新建菜品类型</option>-->
+					<!---->
+					<!--<option>+ 添加类别</option>-->
+				</select>
+				
+				<p> 菜品价格 </p>
+				<input name='price' type="text">
+				<p> 菜品每日限量 </p>
+				<input name='store' type="text">
+				<p> 描述（选填） </p>
+				<input name='description' type="text">
+				<button type='button'>
+					确定
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<div class='add-types-part'>
+		<div class="window">
+			<div class="title">
+				添加新类型
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/cross.png">
+			</div>
+			<form>
+				<p>类别名称</p>
+				<input  name="name" type="text" placeholder="仅限5个字">
+				<p>类别图片</p>
+				<div class='toSelectImg'>
+					<img src="https://mini.wggai.com/storage/img/main-dish-management/image-default.png">
+					<span>从我们的图片库中选择</span>
+					<img src="https://mini.wggai.com/storage/img/main-dish-management/down.png">
+				</div>
+				<div class='imgs'></div>
+
+				<p style='margin-top:40px;'>描述（选填）</p>
+
+				<input name='description' placeholder="仅限20字" type="text">
+                <button type='button'>
+                    确定
+                </button>
+			</form>
+		</div>
+	</div>
+
+	<div class='ensure-part'>
+		<div class="window">
+			<div class="title">
+				删除
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/cross.png">
+			</div>
+			<div class="content">
+				
+				<p>是否删除XXX？</p>
+				<p style='display:none;padding-top:20px;color:red;font-size:12px;'>注：同时会删除此类中所有菜品</p>
+				<div class="btns">
+					<button>取消</button>
+					<button>确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main-send-management">
+	
+	<div class="detail">
+		<div class="detail-li">
+			<span>下单时间：</span>
+			<div class='rankway-select'>
+				<span>时间从新到旧</span>
+				<img src="../img/main-dish-management/down.png">
+				<div class='options'>
+					<div data-v="1">时间从新到旧</div>
+					<div data-v="2">时间从旧到新</div>
+					<div data-v="3">价格从高到低</div>
+					<div data-v="4">价格从低到高</div>
+					<div data-v="5">销量从高到低</div>
+					<div data-v="6">销量从低到高</div>
+				</div>
+			</div>
+		</div>
+		<div class="detail-li">
+			关键词： <input value="" type='text'>
+		</div>
+		<div class="detail-li">
+			置顶为配送： <input type='checkbox' value="">
+		</div>
+		<div class="detail-li">
+			置顶已配送： <input type='checkbox' value="">
+		</div>
+		<div class="detail-li">
+			置顶已送达： <input type='checkbox' value="">
+		</div>
+
+		<a>手动刷新</a>
+		<button>查询</button>
+	</div>
+
+
+	<table cellspacing="0" class="sends-data">
+		<thead>
+			<tr>
+				<th>订单ID</th>
+				<th>配送时间</th>
+				<th>配送地址</th>
+				<th>收货人</th>
+				<th>订单详情</th>
+				<th>配送员</th>
+				<th>订单状态</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th>
+		          	<img class='icon' src="../img/main-send-management/edit.png">	          	
+					<img class='icon' src="../img/main-send-management/minus.png">
+	          </th>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3 style='text-align:center;margin-top:100px;'>
+		未开放配送服务，敬请期待！
+	</h3>
+</div>
+<div class="main-order-detail">
+
+	<div class="detail">
+		<div class='query'>
+			<div class="detail-li">
+				关键词：
+				<input id='keyword' value="" type='text'>
+				<img class='icon' src="https://mini.wggai.com/storage/img/main-order-detail/close.png">
+			</div>
+			<button>查询</button>
+
+			<a>手动刷新</a>
+			<div class='rankway-select'>
+				<span>时间从新到旧</span>
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/down.png">
+				<div class='options'>
+					<div data-v="1">时间从新到旧</div>
+					<div data-v="2">时间从旧到新</div>
+					<div data-v="3">置顶自提订单</div>
+					<div data-v="4">置顶配送订单</div>
+					<div data-v="5">置顶已取餐订单</div>
+					<div data-v="6">置顶已送出订单</div>
+					<div data-v="7">置顶未送出订单</div>
+				</div>
+			</div>
+			<span>排序：</span>
+		</div>
+
+
+	</div>
+
+<table cellspacing="0" class="orders-data">
+    <thead>
+      <tr>
+        <th>订单ID</th>
+        <th>订单详情</th>
+        <th>收货人</th>
+        <th>地址</th>
+        <th>下单时间</th>
+        <th>订单备注</th>
+        <th>标记状态</th>
+      </tr>
+    </thead>
+    <tbody>
+    	<tr>
+	        <th>0001</th>
+	        <th>炒蛋*1+猪扎汤*2+米饭*2</th>
+	        <th>张三 电话：12345678901</th>
+	        <th>华南理工大学</th>
+	        <th>2018-01-11 12：00</th>
+	        <th>不要辣</th>
+	        <th>
+				<button data-status='2' class='got'>已取餐</button>
+	        </th>
+        </tr>
+		<tr>
+	        <th>0001</th>
+	        <th>炒蛋*1+猪扎汤*2+米饭*2</th>
+	        <th>张三 电话：12345678901</th>
+	        <th>华南理工大学</th>
+	        <th>2018-01-11 12：00</th>
+	        <th>不要辣</th>
+	        <th>
+				<button data-status='1' class='sending'>已送出</button>
+	        </th>
+        </tr>
+		<tr>
+	        <th>0001</th>
+	        <th>炒蛋*1+猪扎汤*2+米饭*2</th>
+	        <th>张三 电话：12345678901</th>
+	        <th>华南理工大学</th>
+	        <th>2018-01-11 12：00</th>
+	        <th>不要辣</th>
+	        <th>
+				<button data-status='1' class='sending'>已送出</button>
+	        </th>
+        </tr>
+		<tr>
+	        <th>0001</th>
+	        <th>炒蛋*1+猪扎汤*2+米饭*2</th>
+	        <th>张三 电话：12345678901</th>
+	        <th>华南理工大学</th>
+	        <th>2018-01-11 12：00</th>
+	        <th>不要辣</th>
+	        <th>
+				<button data-status='1' class='sending'>已送出</button>
+	        </th>
+        </tr>
+		<tr>
+	        <th>0001</th>
+	        <th>炒蛋*1+猪扎汤*2+米饭*2</th>
+	        <th>张三 电话：12345678901</th>
+	        <th>华南理工大学</th>
+	        <th>2018-01-11 12：00</th>
+	        <th>不要辣</th>
+	        <th>
+				<button data-status='1' class='sending'>已送出</button>
+	        </th>
+        </tr>
+    	<tr>
+	        <th>0001</th>
+	        <th>炒蛋*1+猪扎汤*2+米饭*2</th>
+	        <th>张三 电话：12345678901</th>
+	        <th>华南理工大学</th>
+	        <th>2018-01-11 12：00</th>
+	        <th>不要辣</th>
+	        <th>
+				<button data-status='0' class='not-send'>未送出</button>
+	        </th>
+        </tr>
+    </tbody>
+  </table>
+	<div class='order-page-chooser'>
+		<div class='first'><<</div>
+		<span class='numbers'></span>
+		<div class='last'>>></div>
+	</div>
+</div>
+<div class="main-comment-management">
+	<div class="detail">
+		<div class="query">
+			
+			<div class="detail-li">
+				时间：
+				<input id='start-time' name='startTime' type="date">
+				—
+				<input id='end-time' name='endTime' type="date">
+			</div>
+			<div class="detail-li">
+                按评分高到低：
+				<input type="checkbox">
+            </div>
+			<div class="detail-li">
+                按评分低到高：
+                <input type="checkbox">
+			</div>
+			
+			<button type='button'>
+                查询
+            </button>
+		</div>
+		
+    
+		<div class='comment-page-chooser'>
+			<div class='first'><<</div>
+			<span class='numbers'></span>
+			<div class='last'>>></div>
+		</div>
+	</div>
+
+  <table cellspacing="0" class="comments-data">
+    <thead>
+      <tr>
+        <th>评论人（昵称）</th>
+        <th>订单ID</th>
+        <th>评论时间</th>
+        <th>总体体验评分</th>
+        <th>内容</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+    	<tr>
+        <th>张三</th>
+        <th>001</th>
+        <th>2018/4/01 12:36:8</th>
+        <th>*****</th>
+        <th>还过得去！</th>
+        <th>
+        	<img class='icon' src="https://mini.wggai.com/storage/img/main-comment-management/letter.png">
+		    <img class='icon' src="https://mini.wggai.com/storage/img/main-comment-management/minus.png">
+        </th>
+        </tr>
+    </tbody>
+  </table>
+
+	<div class="comments-reply">
+		<div class="window">
+			<div class="title">
+				�ظ�����
+				<img src="../img/main-dish-management/cross.png">
+			</div>
+			<div class="content">
+
+				<textarea placeholder="��������д����Ļظ�"></textarea>
+				<button>ȷ��</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="comments-ensure-part">
+		<div class="window">
+			<div class="title">
+				ɾ��
+				<img src="../img/main-dish-management/cross.png">
+			</div>
+			<div class="content">
+				
+				<p>�Ƿ�ɾ�������ۣ�</p>
+				<div class="btns">
+					<button>ȡ��</button>
+					<button>ȷ��</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="main-money-statistics">
+	<div class="day-chooser">
+		<div class='active'>单日</div>
+		<div>多日</div>
+	</div>
+
+	<div class="single-day-part">
+		<div class="detail">
+			<div class='query'>
+				<div class="detail-li">
+					关键词： <input value="" type='text'>
+				</div>
+				<div class="detail-li">
+					按销量高低：<input type='checkbox' value="">
+				</div>
+				<div class="detail-li">
+					按评分高低： <input type='checkbox' value="">
+				</div>
+				<div class="detail-li">
+					按销售量高低： <input type='checkbox' value="">
+				</div>
+				<button>查询</button>
+			</div>
+
+			<div class='money-page-chooser'>
+				<div class='first'><<</div>
+				<span class='numbers'></span>
+				<div class='last'>>></div>
+			</div>
+		</div>
+
+		<table cellspacing="0" class="money-data">
+		    <thead>
+		      <tr>
+		        <th>菜品名称</th>
+		        <th>菜品类别</th>
+		        <th>用户评分</th>
+		        <th>总销量（份）</th>
+		        <th>自提销量（份）</th>
+		        <th>配送销量（份）</th>
+		        <th>单价（元）</th>
+		        <th>销售额（元）不含配送费</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		    	<tr>
+			        <th>鱼香茄子</th>
+			        <th>炒菜</th>
+			        <th>*****</th>
+			        <th>58</th>
+			        <th>29</th>
+			        <th>29</th>
+			        <th>10</th>
+			        <th>580</th>
+		        </tr>
+		    	<tr>
+			        <th>鱼香茄子</th>
+			        <th>炒菜</th>
+			        <th>*****</th>
+			        <th>58</th>
+			        <th>29</th>
+			        <th>29</th>
+			        <th>10</th>
+			        <th>580</th>
+		        </tr>
+		    	<tr>
+			        <th>鱼香茄子</th>
+			        <th>炒菜</th>
+			        <th>*****</th>
+			        <th>58</th>
+			        <th>29</th>
+			        <th>29</th>
+			        <th>10</th>
+			        <th>580</th>
+		        </tr>
+		    	<tr>
+			        <th>鱼香茄子</th>
+			        <th>炒菜</th>
+			        <th>*****</th>
+			        <th>58</th>
+			        <th>29</th>
+			        <th>29</th>
+			        <th>10</th>
+			        <th>580</th>
+		        </tr>
+		    	<tr>
+			        <th>鱼香茄子</th>
+			        <th>炒菜</th>
+			        <th>*****</th>
+			        <th>58</th>
+			        <th>29</th>
+			        <th>29</th>
+			        <th>10</th>
+			        <th>580</th>
+		        </tr>
+		    	<tr>
+			        <th>鱼香茄子</th>
+			        <th>炒菜</th>
+			        <th>*****</th>
+			        <th>58</th>
+			        <th>29</th>
+			        <th>29</th>
+			        <th>10</th>
+			        <th>580</th>
+		        </tr>
+		    </tbody>
+		  </table>
+			<div class="bottom">
+				<div class='total-money'>
+					<div>
+						累计总业绩
+						<span>1000</span>
+						<span>元</span>
+					</div>
+					<div>
+						<span></span>
+						(配送)+
+						<span></span>
+						(自提)
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div class="many-day-part">
+		<div class="detail">
+			<div class='query'>
+				<div class="detail-li">
+					时间：
+					<input value="" type='date'>
+					—
+					<input value="" type='date'>
+				</div>
+				<div class="detail-li">
+					按总业绩高低：<input type='checkbox' value="">
+				</div>
+				<div class="detail-li">
+					按自提业绩高低： <input type='checkbox' value="">
+				</div>
+				<div class="detail-li">
+					按配送业绩高低： <input type='checkbox' value="">
+				</div>
+				<button>查询</button>
+			</div>
+
+			<div class='money-page-chooser'>
+				<div class='first'><<</div>
+				<span class='numbers'></span>
+				<div class='last'>>></div>
+			</div>
+		</div>
+
+		<table cellspacing="0" class="money-data">
+		    <thead>
+		      <tr>
+		        <th>菜品名称</th>
+		        <th>菜品类别</th>
+		        <th>用户评分</th>
+		        <th>总销量（份）</th>
+		        <th>自提销量（份）</th>
+		        <th>配送销量（份）</th>
+		        <th>单价（元）</th>
+		        <th>销售额（元）不含配送费</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		    	<tr>
+			        <th>鱼香茄子</th>
+			        <th>炒菜</th>
+			        <th>*****</th>
+			        <th>58</th>
+			        <th>29</th>
+			        <th>29</th>
+			        <th>10</th>
+			        <th>580</th>
+		        </tr>
+		    </tbody>
+		  </table>
+		<table cellspacing="0" class="money-data">
+		    <thead>
+		      <tr>
+		        <th>年/月/日</th>
+		        <th>自提业绩（元）</th>
+		        <th>配送业绩（元：不含配送费）</th>
+		        <th>当天总业绩（元）</th>
+		        <th>当天销售最佳（菜品）</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		    	<tr>
+			        <th>2018/04/11</th>
+			        <th>29</th>
+			        <th>50</th>
+			        <th>580</th>
+			        <th>鱼香茄子	</th>
+		        </tr>
+		    </tbody>
+		  </table>
+		<div class="bottom">
+			<div class="appear-chooser">
+				<div class="appear-li">
+					<input type="radio" />
+					菜单报表
+				</div>
+				<div class="appear-li">
+					<input type="radio" />
+					业绩报表
+				</div>
+			</div>
+			
+			<div class='total-money'>
+				<div>
+					累计总业绩
+					<span>1000</span>
+					<span>元</span>
+				</div>
+				<div>
+					<span></span>
+					(配送)+
+					<span></span>
+					(自提)
+				</div>
+			</div>
+			
+		</div>
+
+
+	</div>
+
+</div>
+<div class="main-exit">
+	
+		<div class="window">
+			<div class="title">
+				登出
+				<img src="../img/main-exit/exit.png" />
+			</div>
+			
+			<div class="content">
+				<p>确认登出吗？</p>
+				<div class="btns">
+					<button>是</button>
+				</div>
+			</div>
+
+
+		</div>
+
+</div>
+
+
+
+<!-- <script src="https://mini.wggai.com/storage/js/main.js"></script> -->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://mini.wggai.com/storage/js/assist.js'></script>
+<script src='https://mini.wggai.com/storage/js/main-left-menu.js'></script>
+<script src='https://mini.wggai.com/storage/js/main-dish-management.js'></script>
+<script src='https://mini.wggai.com/storage/js/main-send-management.js'></script>
+<script src='https://mini.wggai.com/storage/js/main-order-detail.js'></script>
+<script src='https://mini.wggai.com/storage/js/main-comment-management.js'></script>
+<script src='https://mini.wggai.com/storage/js/main-money-statistics.js'></script>
+<script src='https://mini.wggai.com/storage/js/main-exit.js'></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+.chooseOK{
+   padding:0 5px;
+   overflow-y: scroll;
+   padding-bottom:150rpx;
+}
+
+.title{
+   height:40px;
+   line-height: 40px;
+   text-align:center;
+   background-color:#f43364;
+   background:linear-gradient(90deg,#F94E5B,#F32E74 90%);
+   color:#fff;
+   font-size:32rpx;
+   border-bottom:3px solid #FFF;
+}
+
+
+
+
+.warm-tip{
+   height:240rpx;
+   width:94%;
+   margin:3%;
+   border-radius: 15rpx;
+   border:2px solid #F32E74;
+   text-align: center;
+}
+
+.warm-tip image{
+   margin-top:20rpx;
+   width:80rpx;
+   height:86rpx;
+}
+
+.tip-title{
+   font-weight: 600;
+   font-size:30rpx;
+}
+
+.tip-word{
+   font-size:26rpx;
+}
+
+
+
+
+.chosenFoodsTotal{
+    display: block;
+}
+
+
+.pay-item-li{
+   height:100rpx;
+      
+}
+
+.pay-item-image{
+    float:left;
+    margin-right:5px;
+    width:90rpx;
+    height:90rpx;
+}
+.detail{
+   float:left;
+   margin-left:15px;
+}
+
+.pay-item-name{
+   color:#333;
+}
+
+.pay-item-price{
+   padding:0;
+   height:15px;
+   font-size:12px;
+}
+.pay-item-total{
+   float:right;
+   font-size:13px;
+   margin-right:5px;
+   padding-top:25rpx;
+}
+
+.chooseCoupon{
+   padding-top:5px;
+   margin-top:10px;
+   border-top:1px solid #CCC;
+}
+.chooseCoupon:after{
+    content:"";
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+}
+.coupon{
+   float:left;
+   font-size:12px;
+}
+
+.couponDetail{
+   float:right;
+   color:#BBB;
+   font-size:10px;
+}
+.couponDetail:after{
+   content:'>';
+}
+
+.send-tip{
+   text-align: left;
+   position:relative;
+   padding:5px 10px; 
+   margin-top:20px;
+   left:50%;
+   transform:translateX(-50%);
+   font-size:12px;
+}
+
+.sendToWhere{
+   width:90%;
+   position:relative;
+   left:50%;
+   transform:translateX(-50%);
+   background-color:#FFF;
+   padding:10px;
+   border:1px solid #BBB;
+   border-radius: 5px;
+}
+
+.send-li:first-of-type{
+   border-bottom:1px solid #999;
+
+}
+.send-li-left{
+   
+}
+.l1{
+   font-weight: 300;
+}
+.l2{
+   font-size: 10px;
+   color:#999;
+}
+.chooseOtherAddress{
+   color:#86d2fb;
+}
+
+.send-li-right{
+   float:right;
+   
+}
+
+.choice{
+   float:right;
+   margin-top:30rpx;
+   width:12px;
+   height:12px;
+   border:1px solid #BBB;
+   margin:10px;
+   border-radius: 2px;
+}
+
+.orderDetail{
+   width:90%;
+   padding:10px;
+   transform:translateX(-50%);
+   position:relative;
+   left:50%;
+   border:1px solid #BBB;
+   background-color:#FFF;
+   border-radius: 5px;
+}
+
+.remark{
+   width:90%;
+   padding:15rpx;
+   transform:translateX(-50%);
+   position:relative;
+   left:50%;
+   border:1px solid #BBB;
+   background-color:#FFF;
+   border-radius: 5px;
+   font-size:12px;
+   color:#999;
+}
+
+.remark span{
+   display: inline-block;
+
+   width:300rpx;
+   overflow: hidden;
+   text-overflow:ellipsis;
+   white-space: nowrap;
+}
+
+.right-arrow{
+   float:right;
+   font-weight: 600;
+   font-size:16px;
+}
+
+.inButtom{
+    position: fixed;
+    bottom:0rpx;
+    width:100%;
+}
+.ensurePay{
+    height:100rpx;
+    background-color:#C33;
+    opacity:0.8;
+    color:#FFF;
+    line-height:100rpx;
+}
+
+
+.cart-wrp {
+   height: 90rpx;
+   width:90%;
+   transform: translateX(-50%);
+   left:50%;
+   border-radius:5px;
+   position: fixed;
+   bottom: 2%;
+   background: rgba(50, 50, 50, 0.8);
+   z-index: 10;
+   color: black;
+}
+
+
+.cart-total-price {
+   float: left;
+   width: 40rpx;
+   height: 40rpx;
+   margin-left:10px;
+   font-size: 36rpx;
+   color: #ed7e05;
+   line-height: 100rpx;
+   text-align: center;
+}
+
+
+.theCoupon{
+   float:left;
+   color:#fff;
+   font-size:12px;
+   margin-top:35rpx;
+   margin-left:40px;
+}
+
+.cart-item-btn {
+   width:80px;
+   height:100%;
+   line-height: 100rpx;
+   float: right;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   font-size: 28rpx;
+   background: #f5a22d;
+   color: #fff;
+   text-align: center;
+}

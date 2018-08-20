@@ -1,0 +1,156 @@
+      <view class='title'>生成订单</view>
+   <view class='chooseOK'>
+
+      <view class='warm-tip'>
+         <image src='{{warmTipPic}}'></image>
+         <view class='tip-title'>
+            温馨提示
+         </view>
+         <view class='tip-word'>
+            目前尚未开放退单功能，自提用户请按时取餐
+         </view>
+      </view>
+
+      <view class='send-tip'>配送至</view>
+
+      <view class='sendToWhere'>
+         <view class='send-li'>
+
+         <view
+            class='choice'
+            bindtap='tip1'
+            style='{{active1}}'
+         ></view>
+            <view class='send-li-left'>
+               <view class='l1'>我要自提</view>
+               <view class='l2'>
+                  自提点：XXXXXXXXX
+               </view>
+            </view>
+            
+         </view>
+
+         <view 
+            bindtap = 'tip2'
+            class='send-li'
+         >
+
+         <view 
+            class='choice'
+            style='{{active2}}'
+         ></view>
+         
+            <view class='send-li-left'>
+               
+               <view class='l1'>我要配送</view>
+               <!-- <view 
+                  bindtap='getAddress'
+                  class='l2'
+               > -->
+               <view 
+                  class='l2'
+               >
+                  配送地址：{{address}}
+                  <view
+                     class='chooseOtherAddress'
+                  >选择其它地址 >>
+                  </view>
+
+               </view>
+            </view>
+            
+         </view>
+
+      </view>
+
+
+
+      <view class='send-tip'>订单详情</view>
+      <view class='orderDetail'>
+
+          <scoll-view class='chosenFoodsTotal' >
+            <view
+                  class='pay-item-li'
+                  wx:for="{{chosenFoods}}"
+                  wx:key = 'id'
+            >
+                  <block>
+                     <image 
+                        class='pay-item-image'
+                        src='{{item.pic}}'
+                     />
+
+                     <view class='detail'>
+                        <view class='pay-item-name'>
+                           {{item.name}}
+                        </view>
+                        <view class='pay-item-price'>
+                           ¥{{item.price}}  ×  {{item.count}} 份 
+                        </view>
+                     </view>
+
+                     <view
+                        class='pay-item-total'
+                     >¥{{item.price*item.count}}
+                     </view>
+
+                  </block>
+            </view>
+         </scoll-view>  
+
+         <view 
+            bindtap='chooseCoupon'
+            class='chooseCoupon'
+         >
+            <view class='coupon'>优惠券</view>
+            <view 
+               class='couponDetail'
+               style='{{couponid?"color:#f94e5b":""}}'
+            >
+               {{couponname}}
+            </view>
+         </view>
+
+      </view>
+
+
+      <view class='send-tip'>填写备注</view>
+      <view 
+         class='remark'
+         bindtap='toRemark'
+      >
+         <span>{{remark?remark:"口味、偏好等"}}</span>
+          <view class='right-arrow'>></view>
+      </view>
+
+
+
+
+
+
+
+
+
+    <!-- 底部的展示总价框 -->
+    <view class="cart-wrp">
+    
+        <view class="cart-total-price">
+            ￥{{totalPrice - couponmoney}}
+        </view>
+
+         <view class='theCoupon'>
+            已优惠 ￥{{couponmoney?couponmoney:"0.00"}}
+         </view>
+
+        <!-- 跳转到支付页面的按钮 -->
+         <view
+               class="cart-item-btn"
+               hover-class="navigator-hover"
+               bindtap = 'showPayCode'
+         >微信支付
+         </view>
+    </view>
+
+
+
+    </view>

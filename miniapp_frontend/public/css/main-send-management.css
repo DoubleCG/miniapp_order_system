@@ -1,0 +1,189 @@
+.main-send-management {
+  float: left;
+  background-color: #f0f0f0;
+  width: 1060px;
+  display: none;
+  height: 660px;
+  padding: 20px;
+}
+.main-send-management .detail {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.main-send-management .detail:after {
+  clear: both;
+  display: block;
+}
+.main-send-management .detail .detail-li {
+  display: inline-block;
+  width: 160px;
+  font-size: 14px;
+  transform: translateX(5px);
+  text-align: center;
+}
+.main-send-management .detail .detail-li > span {
+  float: left;
+  font-size: 14px;
+  transform: translateX(-40px) translateY(3px);
+}
+.main-send-management .detail .detail-li input[type='text'] {
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 3px;
+  height: 20px;
+  width: 80px;
+}
+.main-send-management .detail .detail-li input[type='checkbox'] {
+  border: none;
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: black;
+}
+.main-send-management .detail a {
+  float: right;
+  display: block;
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: #A495E7;
+  font-size: 14px;
+  text-decoration: underline;
+  transform: translateY(5px);
+}
+.main-send-management .detail button {
+  float: right;
+  color: #FFF;
+  background-color: #f7424f;
+  width: 90px;
+  margin-right: 10px;
+  height: 30px;
+  line-height: 25px;
+  font-size: 12px;
+  border: 2px solid #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-send-management .detail .rankway-select {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  border: 1px solid #999;
+  padding: 2px;
+  cursor: pointer;
+  height: 24px;
+  overflow: hidden;
+  transition: all 0.3s;
+  padding: 0;
+  background-color: #FFF;
+  font-size: 14px;
+}
+.main-send-management .detail .rankway-select img {
+  width: 16px;
+  height: 16px;
+  transform: translateY(2px);
+}
+.main-send-management .detail .rankway-select span {
+  padding-left: 5px;
+}
+.main-send-management .detail .rankway-select .options {
+  margin-top: 4px;
+  border-top: 2px solid #999;
+}
+.main-send-management .detail .rankway-select .options > div {
+  height: 30px;
+  line-height: 30px;
+}
+.main-send-management .detail .rankway-select .options > div:hover {
+  background-color: #f7424f;
+}
+.main-send-management .sends-data {
+  width: 94%;
+  margin: 20px 0 0 3%;
+  border: 1px solid #CCC;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+.main-send-management .sends-data thead tr {
+  background-color: #dcdcdc;
+  color: #222;
+}
+.main-send-management .sends-data thead tr th {
+  height: 40px;
+  font-weight: 300;
+}
+.main-send-management .sends-data tbody tr {
+  background-color: #FFF;
+  color: #222;
+}
+.main-send-management .sends-data tbody tr th {
+  height: 60px;
+  font-weight: 300;
+  width: 120px;
+}
+.main-send-management .sends-data tbody tr th img.dish-img {
+  width: 80px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main-send-management .sends-data tbody tr th img.icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+.main-send-management .sends-data tbody tr th button {
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #FA4E5C;
+}
+.main-send-management .sends-data tbody tr th button.isHot-on {
+  background-color: #FFF;
+  color: #FA4E5C;
+}
+.main-send-management .sends-data tbody tr th button.isHot-off {
+  background-color: #FA4E5C;
+  color: #FFF;
+}
+.main-send-management .sends-data tbody tr th:first-of-type {
+  border-left: none;
+}
+.main-send-management .sends-data tfoot tr {
+  background-color: #FFF;
+  color: #222;
+  height: 60px;
+}
+.main-send-management .sends-data tfoot tr th {
+  border-left: 1px solid #BBB;
+  border-bottom: 1px solid #BBB;
+  height: 40px;
+  font-weight: 300;
+  width: 120px;
+}
+.main-send-management .sends-data tfoot tr th button {
+  cursor: pointer;
+  width: 140px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 30px;
+  border: 1px solid #CCC;
+  color: #FFF;
+  background-color: #FA4E5C;
+}
+.main-send-management .sends-data tfoot tr th button img {
+  width: 20px;
+  height: 20px;
+  transform: translateY(5px);
+}
+.main-send-management .sends-data tfoot tr th:first-of-type {
+  border-left: none;
+  text-align: center;
+  line-height: 60px;
+}
+.main-send-management .sends-data tfoot tr:last-of-type th {
+  border-bottom: none;
+}

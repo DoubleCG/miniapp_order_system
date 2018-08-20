@@ -1,0 +1,55 @@
+.titleBar{
+  display: flex;
+    height: 110rpx;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30rpx;
+    line-height: 42rpx;
+    color: #333333;
+    padding: 34rpx 0 34rpx 20rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  .titleWarp{
+    display: flex;
+    align-items: center;
+  }
+  .titleBar .w-b{
+    display: inline-block;
+    width: 4rpx;
+    height: 20rpx;
+    background-color: rgb(254, 216, 73);
+    margin-right: 10rpx;
+  }
+  .titleBar span{
+    display: inline-block;
+  }
+  .titleBar .icon{
+    display: inline-block;
+    margin-right: 36rpx;
+    width: 12rpx;
+    height: 24rpx;
+    box-sizing: content-box;
+  }
+  .user-myGold{
+    font-size: 36rpx;
+    color: #F99225;
+    padding-right: 36rpx;
+  }
+  .border-bottom{
+  position: relative;
+}
+.border-bottom::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+.mt3{
+  margin-top: 12rpx;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="dfdeb9d3-9a29-41d4-9b95-5493ec420b57" name="miniappshop2" url="http://120.79.221.219">
+        <fileTransfer host="120.79.221.219" port="22" rootFolder="/www/wwwroot/mini_wggai_com" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,193 @@
+<div class="main-dish-management">
+
+	<div class='dishs'>
+		<div class="detail">
+			<div class='detail-li'>
+				关键词：
+				<input class='keyword' name='keyword' placeholder="菜品" value="" type='text'>
+				<img class='icon' src="https://mini.wggai.com/storage/img/main-order-detail/close.png">
+			</div>
+
+			<div class='detail-li'>
+				价格区间：
+				<input class='lower_price' name='lower_price' type="text">
+				—
+				<input class='upper_price' name='upper_price' type="text">
+			</div>
+
+			<div class='rankway-select'>
+				<span>时间从新到旧</span>
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/down.png">
+				<div class='options'>
+					<div data-v="1">时间从新到旧</div>
+					<div data-v="2">时间从旧到新</div>
+					<div data-v="3">价格从高到低</div>
+					<div data-v="4">价格从低到高</div>
+					<div data-v="5">销量从高到低</div>
+					<div data-v="6">销量从低到高</div>
+				</div>
+			</div>
+
+			<button> 查询 </button>
+
+		</div>
+
+	    <table cellspacing="0" class="dishs-data">
+	      <thead>
+	        <tr>
+	          <th>ID</th>
+	          <th>图片</th>
+	          <th>名称</th>
+	          <th>所属类别</th>
+	          <th>价格(元)</th>
+	          <th>日均销量(份)</th>
+	          <th>每日限量(份)</th>
+	          <th>描述</th>
+	          <th>设置热销</th>
+	          <th>操作</th>
+	        </tr>
+	      </thead>
+	      <tbody></tbody>
+	      <tfoot>
+	      	<tr>
+				<th></th>	      		
+				<th colspan='9'>
+					<button>
+						<img src="https://mini.wggai.com/storage/img/main-dish-management/add.png">添加菜品
+					</button>
+				</th>	      		
+	      	</tr>
+	      </tfoot>
+	    </table>
+	</div>
+
+
+	<div class="divider">
+		<span></span>
+		<span></span>
+		以下是菜品类型列表
+	</div>
+
+	<div class='types'>
+	    <table cellspacing="0" class="types-data">
+	      <thead>
+	        <tr>
+	          <th>ID</th>
+	          <th>图片</th>
+	          <th>名称</th>
+	          <th>标签描述</th>
+	          <th>操作</th>
+	        </tr>
+	      </thead>
+
+	      <tbody></tbody>
+
+  	      <tfoot>
+	      	<tr>
+				<th></th>	      		
+				<th colspan='9'>
+					<button>
+						<img src="https://mini.wggai.com/storage/img/main-dish-management/add.png">添加类别
+					</button>
+				</th>	      		
+	      	</tr>
+	      </tfoot>
+	    </table>
+	</div>
+
+	<div class="add-dishs-part">
+		<div class="window">
+			<div class="title">
+				<span>添加菜品</span>
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/cross.png">
+			</div>
+			<form>
+				<p> 菜品名称 </p>
+				<input name='name' type="text">
+				<p> 菜品图片 </p>
+				<input name="img" type="file"> <img>
+
+				<p> 菜品所属类别 </p>
+				<select name="types">
+					<!--<option style='display:none;'>选择/新建菜品类型</option>-->
+					<!---->
+					<!--<option>+ 添加类别</option>-->
+				</select>
+				
+				<p> 菜品价格 </p>
+				<input name='price' type="text">
+				<p> 菜品每日限量 </p>
+				<input name='store' type="text">
+				<p> 描述（选填） </p>
+				<input name='description' type="text">
+				<button type='button'>
+					确定
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<div class='add-types-part'>
+		<div class="window">
+			<div class="title">
+                <span>添加新类型</span>
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/cross.png">
+			</div>
+			<form>
+				<p>类别名称</p>
+				<input  name="name" type="text" placeholder="仅限5个字">
+				<p>类别图片</p>
+				<div class='toSelectImg'>
+					<img src="https://mini.wggai.com/storage/img/main-dish-management/image-default.png">
+					<span>从我们的图片库中选择</span>
+					<img src="https://mini.wggai.com/storage/img/main-dish-management/down.png">
+				</div>
+
+				<div class="type-icons">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/cold.png">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/drink.png">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/fire.png">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/fry.png">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/meet.png">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/noodles.png">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/rice.png">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/roast.png">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/soup.png">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/steam.png">
+                    <img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/sweet.png">
+					<img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/vegetables.png">
+					<img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/cereal.png">
+					<img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/fork.png">
+					<img class='icon' src="https://mini.wggai.com/storage/img/main-dish-management/type-icons/pot.png">
+				</div>
+
+				<div class='imgs'></div>
+
+				<p style='margin-top:40px;'>描述（选填）</p>
+
+				<input name='description' placeholder="仅限20字" type="text">
+                <button type='button'>
+                    确定
+                </button>
+			</form>
+		</div>
+	</div>
+
+	<div class='ensure-part'>
+		<div class="window">
+			<div class="title">
+				删除
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/cross.png">
+			</div>
+			<div class="content">
+				
+				<p>是否删除 <span></span> ？</p>
+				<p style='display:none;padding-top:20px;color:red;font-size:12px;'>注：同时会删除此类中所有菜品</p>
+				<div class="btns">
+					<button>取消</button>
+					<button>确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

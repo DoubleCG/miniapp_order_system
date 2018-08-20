@@ -1,0 +1,82 @@
+<div class="main-comment-management">
+	<div class="detail">
+		<div class="query">
+			
+			<div class="detail-li">
+				时间：
+				<input id='start-time' name='startTime' type="date">
+				—
+				<input id='end-time' name='endTime' type="date">
+			</div>
+			<button type='button'>
+				查询
+			</button>
+
+			<a>手动刷新</a>
+			<div class='rankway-select'>
+				<span>时间从新到旧</span>
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/down.png">
+				<div class='options'>
+					<div data-v="1">时间从新到旧</div>
+					<div data-v="2">时间从旧到新</div>
+					<div data-v="3">评分从高到低</div>
+					<div data-v="4">评分从低到高</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="table-wrap">
+	  <table cellspacing="0" class="comments-data">
+		<thead>
+		  <tr>
+			<th>订单ID</th>
+			<th>评论时间</th>
+			<th>总体体验评分</th>
+			<th>内容</th>
+			<th>操作</th>
+		  </tr>
+		</thead>
+
+		<tbody></tbody>
+
+	  </table>
+		<div class='comment-page-chooser'>
+			<div class='first'><<</div>
+			<span class='numbers'></span>
+			<div class='last'>>></div>
+		</div>
+	</div>
+
+	<div class="comments-reply">
+		<div class="window">
+			<div class="title">
+				回复评论
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/cross.png">
+			</div>
+			<div class="content">
+				<textarea placeholder="请在这里输入您的回复"></textarea>
+				<button>确认</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="comments-ensure-part">
+		<div class="window">
+			<div class="title">
+				删除评论
+				<img src="https://mini.wggai.com/storage/img/main-dish-management/cross.png">
+			</div>
+			<div class="content">
+				
+				<p>是否要将这条评论删除？</p>
+				<div class="btns">
+					<button>取消</button>
+					<button>确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
